@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bounder.io</title>
+    <meta name="author" content="Bounder.io">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet.draw.css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/bootstrap-dialog.min.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="lib/leaflet/leaflet.ie.css" />
+        <link rel="stylesheet" href="leaflet.draw.ie.css" />
+        <![endif]-->
+    <link rel="stylesheet" href="css/ladda-themeless.min.css">
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet.draw.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/ladda.min.js"></script>
+    <script src="js/bootstrap-dialog.min.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <script src="js/leaflet.awesome-markers.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+    <script src="js/Marker.Rotate.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="visibility: hidden;" id="main-view">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="btn btn-default navbar-btn" id="drones-menu-toggle">Drones...</button>
+                        <a class="navbar-brand" href="#">Bounder.io</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right">
+                        <p class="navbar-text" id="current-drone-label"></p>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="" id="aboutUserLink"></a>
+                            </li>
+                            <button type="button" class="btn btn-warning navbar-btn" onclick="API.logOut()">
+                                Logout
+                            </button>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div id="wrapper" style="padding-top: 50px;" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" style="margin-top: 20px;margin-bottom: 20px">
+                                <div class="col-sm-12 text-center">
+                                    <button type="button" style="margin-left: 50" class="btn btn-success" id="add-drone-btn" onclick="$('#new-drone-dialog').modal('show');return false;">
+                                        Add New Drone
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="panel-group" id="drone-summary-panel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div id="page-content-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tabbable" id="tabs-148670">
+                            <ul class="nav nav-pills">
+                                <li class="active">
+                                    <a href="#panel-760067" data-toggle="tab">Map</a>
+                                </li>
+                                <li>
+                                    <a href="#panel-514273" data-toggle="tab">Log</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="panel-760067">
+                                    <div id="map" style="width: 100%; height: 600px;"></div>
+                                </div>
+                                <div class="tab-pane" id="panel-514273">
+                                    <nav class="navbar navbar-default">
+                                        <div class="container-fluid">
+                                            <!-- Brand and toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                                <a class="navbar-brand" href="#">Telemetry Log</a>
+                                            </div>
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                <!-- <ul class="nav navbar-nav">
+                                                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                                    <li><a href="#">Link</a></li>
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Action</a></li>
+                                                            <li><a href="#">Another action</a></li>
+                                                            <li><a href="#">Something else here</a></li>
+                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="#">Separated link</a></li>
+                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="#">One more separated link</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul> -->
+                                                <form class="navbar-form navbar-left" role="search">
+                                                   <!--  <div class="form-group">
+                                                        <input type="text" class="form-control" id="telem-history-drone-id" placeholder="Enter drone ID">
+                                                    </div> -->
+                                                    <select class="form-control" id="telem-history-drone-id-select">
+                                                    </select>
+                                                    <select class="form-control" id="telem-history-filter-select">
+                                                        <option value="text">Statuses only</option>
+                                                        <option value="">All records</option>
+                                                    </select>
+                                                    <input type="text" style="width: 300px" name="logdaterange" value="" class="form-control">
+                                                      <!--   <i class="glyphicon glyphicon-calendar fa fa-calendar">
+                                                            
+                                                        </i> -->
+                                                    </input>
+
+                                                    <button type="button" class="btn btn-default btn-success ladda-button" id="load-telem-btn" data-style="zoom-in"><span class="ladda-label">Load</span></button>
+
+
+                                                </form>
+                                                <!-- <ul class="nav navbar-nav navbar-right">
+                                                    <li><a href="#">Link</a></li>
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Action</a></li>
+                                                            <li><a href="#">Another action</a></li>
+                                                            <li><a href="#">Something else here</a></li>
+                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="#">Separated link</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul> -->
+                                            </div>
+                                            <!-- /.navbar-collapse -->
+                                        </div>
+                                        <!-- /.container-fluid -->
+                                    </nav>
+                                    <div class="row">
+                                        <div class="col-md-4" id="telemetry-history-container">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="login-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" id="rememberMe">Remember me</label>
+                        </div>
+                        <button type="button" class="btn btn-default btn-success btn-block ladda-button" id="login-btn" data-style="zoom-in"><span class="ladda-label">Login</span> </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Not a member? <a href="#" onclick="$('#sign-up-dialog').modal('show');return false;">Sign Up</a></p>
+                    <!-- <p>Forgot <a href="#">Password?</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sign-up-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <!--  <div class="form-group">
+                            <label for="inputLogin">
+                                Login
+                            </label>
+                            <input type="text" class="form-control" id="inputLogin">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="inputEmail">
+                                Email address
+                            </label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">
+                                Password
+                            </label>
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <button type="button" class="btn btn-default btn-success ladda-button" id="submitLogin" data-style="zoom-in"><span class=" ladda-label">Submit</span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var map = null;
+    var currentDrone = null;
+    var telemDateFrom = undefined;
+    var telemDateTo = undefined;
+    var lastDroneList = undefined;
+    $(document).ready(function() {
+        if (localStorage.getItem("rememberMe") === "true")
+            $('#rememberMe').prop('checked', true);
+
+
+        $('#rememberMe').click(function() {
+
+            localStorage.setItem("rememberMe", $('#rememberMe').prop('checked'));
+            // $("#rememberMe").toggle(this.checked);
+        });
+        map = initMap();
+        console.log('loaded');
+
+        map.OnZoneCreated = function(zone) {
+            API.saveNoFlyZone(zone).success(function(zone) {
+                //map.addZone(zone);
+                console.log('saveNoFlyZone success, waiting for update from ws')
+            });
+        }
+
+        map.OnPathCreated = function(path) {
+            API.saveDronePath(path, currentDrone.id).success(function(path) {
+                //map.addZone(zone);
+                console.log('saveDronePath success, waiting for update from ws')
+            });
+        }
+
+        map.ZonePopupCallback = function(zone) {
+            if (!zone.is_global) {
+                return Mustache.render($("#zone-popup-template").html(), {
+                    zone_id: zone.id
+                });
+
+            } else {
+                return "Global NonFly Zone#" + zone.id;
+            }
+        }
+
+        map.DronePopupCallback = function(dr) {
+            return Mustache.render($("#drone-popup-template").html(), dr)
+
+        }
+
+        map.OnCurrentDroneChanged = function(drone) {
+            // console.log(drone)
+            $("#current-drone-label").text('Current drone: ' + drone.drone_info.name)
+        }
+
+
+        map.DronePathPopupCallback = function(path) {
+            
+            return Mustache.render($("#drone-path-template").html(), path)
+        }
+
+
+
+
+        $("#drones-menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            // $("#login-dialog").modal()
+
+        });
+        // $("#wrapper").toggleClass("toggled");
+        $("#login-dialog").modal({
+            backdrop: false,
+            keyboard: false
+        });
+
+        $('#submitLogin').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            API.signUp($('#inputEmail').val(), $('#inputPassword').val())
+                .always(function() {
+                    l.stop();
+                });
+            return false;
+        });
+
+
+        $('#login-btn').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            console.log('logging in');
+
+            API.login($('#usrname').val(), $('#psw').val())
+                .always(function() {
+                    l.stop();
+                });
+            return false;
+        });
+        API.onError = function(errMsg) {
+            BootstrapDialog.show({
+                title: 'Server error',
+                message: $('<div></div>').html(errMsg),
+                type: BootstrapDialog.TYPE_WARNING
+            });
+        }
+        API.onLoggedIn = function(u) {
+            user = u;
+            loggedIn = true;
+            $('#main-view').css('visibility', 'visible');
+            $("#login-dialog").modal('hide');
+            $("#sign-up-dialog").modal('hide');
+            $('#aboutUserLink').text(user.login);
+
+        }
+        API.onConnected = function() {
+            updateDroneList();
+            updateDronePaths();
+            API.getNoFlyZones().success(function(d) {
+                map.SetZones(d)
+            });
+            API.getGlobalNoFlyZones().success(function(d) {
+                map.SetGlobalZones(d)
+            });
+        }
+        API.onLoggedOut = function() {
+            $('#main-view').css('visibility', 'hidden')
+            $("#login-dialog").modal({
+                backdrop: false,
+                keyboard: false
+            });
+            $("#sign-up-dialog").modal('hide')
+        };
+        API.onDroneChanged = function(drone) {
+            if (!drone.online) {
+                map.deleteDroneLabel(drone.id)
+            }
+            drone.online_icon_visibility = drone.online ? "display: inline;" : "display: none;";
+            drone.register_btn_visibility = !drone.active ? "display: inline;" : "display: none;";
+            var headerHTML = Mustache.render($("#drone-summary-header-template").html(), drone);
+            var bodyHTML = Mustache.render($("#drone-summary-body-template").html(), drone);
+
+            $("#panel-element-header" + drone.id).html(headerHTML);
+            $("#drone-panel-body" + drone.id).html(bodyHTML);
+            $("#registerDrone" + drone.id).prop('disabled', drone.active);
+
+        }
+        $('#aboutUserLink').click(function(e) {
+            e.preventDefault();
+            BootstrapDialog.show({
+                title: 'About you',
+                message: $('<div></div>').html(formatJS(user)),
+                type: BootstrapDialog.TYPE_INFO
+            });
+        });
+        // console.log('localStorage.getItem("rememberMe")', localStorage.getItem("rememberMe"))
+        if (localStorage.getItem("rememberMe") == "true") {
+            API.tryResumeSession();
+        }
+        $('#submitNewDrone').click(function(e) {
+
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            API.addDrone($('#inputUUID').val(), $('#inputNAME').val(), $('#inputComment').val())
+                .always(function() {
+                    l.stop();
+                })
+                .success(function(dronedata) {
+                    updateDroneList();
+                    $("#new-drone-dialog").modal('hide');
+                });
+            return false;
+        });
+        $('#registerDroneSubmit').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            // console.log($('#inputCode').val())
+            API.registerDrone(uuidToRegister, $('#inputCode').val())
+                .always(function() {
+                    l.stop();
+                })
+                .success(function(dronedata) {
+                    updateDroneList();
+                    $("#register-drone-dialog").modal('hide');
+                    BootstrapDialog.show({
+                        title: 'Success!',
+                        message: "Your drone " + uuidToRegister + " is registered and ready to use:)",
+                        type: BootstrapDialog.TYPE_WARNING
+                    });
+                });
+
+            return false;
+        });
+
+
+        $('#load-telem-btn').click(function(e) {
+            
+
+            API.getTelemetryHistory($('#telem-history-drone-id-select').val(), 
+                telemDateFrom, 
+                telemDateTo, 
+                $('#telem-history-filter-select').val())
+           
+            .success(function(telemHistory) {
+                 
+                // console.log(telemHistory)
+                $("#telemetry-history-container").html('')
+
+              
+                 $.each(telemHistory, function(index, record) {
+                    // console.log( (new Date(record.data.timestamp)))
+                    record.data.fmtTimestamp =moment(record.data.timestamp).format('YYYY/MM/DD HH:mm:ss.SSS')
+                    $("#telemetry-history-container").append(
+
+                        Mustache.render($("#telemetry-log-template").html(), record.data)
+                        );
+                });
+            });
+        });    
+        API.onTelemetry = function() {
+            map.displayDrones(API.drones_telemetry)
+        }
+
+
+        API.onDeleteGlobalZones = function(zones) {
+            map.deleteNoFlyZones(zones)
+        }
+
+        API.onAddGlobalZones = function(zones) {
+            map.loadNoFlyZones(zones)
+        }
+        API.onDeleteZones = function(zones) {
+            map.deleteNoFlyZones(zones)
+        }
+        API.onAddZones = function(zones) {
+            map.loadNoFlyZones(zones)
+        }
+
+        API.onUpdatePath = function(path) {
+            for (var i = 0; i < lastDroneList.length; i ++) {
+                if(lastDroneList[i].uuid == path.vehicle_uuid) {
+                    path.drone = lastDroneList[i];
+                    break;
+                }
+            }
+            console.log('path.drone', path.drone)
+            map.setDronePath(path)
+        }
+        API.onDeletePath = function(path) {
+            map.deleteDronePath(path)
+        }
+
+        function createRanges() {
+            return {
+                                    "5 seconds": [
+                                        moment().subtract(5, 'seconds'),
+                                        moment()
+                                    ],
+                                    "5 minutes": [
+                                        moment().subtract(5, 'minutes'),
+                                        moment()
+                                    ],
+                                    "24 hours": [
+                                        moment().subtract(1, 'days'),
+                                        moment()
+                                    ]
+                                }
+        };
+        function createPicker() {
+                    var picker = $('input[name="logdaterange"]').daterangepicker({
+                                locale: {
+                                  format: 'YYYY/MM/DD HH:mm:ss'
+                                },
+                                "showDropdowns": true,
+                                "timePicker": true,
+                                "timePicker24Hour": true,
+                                "timePickerSeconds": true,
+                                "dateLimit": {
+                                    "hours": 14
+                                },
+                                "ranges": createRanges(),
+                                "startDate": moment().subtract(5, 'minutes'),
+                                "endDate": moment()
+                            }, function(start, end, label) {
+                                      // console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + 
+                                      //   end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                                      // console.log('New date range selected: ' + start.format() + ' to ' + 
+                                        // end.format() + ' (predefined range: ' + label + ')');
+
+                                      var ranges = createRanges();
+                                      var set = false;
+                                      for(var l in ranges) {
+                                        if(l == label) {
+                                            this.setStartDate(ranges[l][0])
+                                            this.setEndDate(ranges[l][1])
+                                            telemDateFrom = ranges[l][0].format();
+                                            telemDateTo = ranges[l][1].format();
+                                            set = true
+                                            break;
+                                        }
+                                      }
+                                      if(!set) {
+                                          telemDateFrom = start.format();
+                                          telemDateTo = end.format();
+                                      }
+                        });
+                    // $('input[name="logdaterange"]').on('show.daterangepicker', function(ev, picker) {
+                    //     window.clearInterval(datePickerUpdater)
+                    // });
+                    //  $('input[name="logdaterange"]').on('hide.daterangepicker', function(ev, picker) {
+                    //     datePickerUpdater = window.setInterval(createPicker,  1000);
+                    // });
+                    telemDateFrom = moment().subtract(5, 'minutes').format();
+                    telemDateTo = moment().format();
+            };
+        createPicker()
+        // var datePickerUpdater = window.setInterval(createPicker,  1000);
+        // updateDroneList();
+
+    });
+
+    function updateDroneList() {
+        API.getDrones().success(function(droneList) {
+            lastDroneList = droneList;
+            $("#drone-summary-panel").html('')
+            $("#telem-history-drone-id-select").html('')
+           
+            $.each(droneList, function(index, drone) {
+                // console.log(JSON.stringify(drone))
+                drone.register_btn_visibility = !drone.active ? "display: inline;" : "display: none;";
+
+                drone.online_icon_visibility = drone.online ? "display: inline;" : "display: none;";
+                var headerHTML = Mustache.render($("#drone-summary-header-template").html(), drone);
+                var bodyHTML = Mustache.render($("#drone-summary-body-template").html(), drone);
+                $("#drone-summary-panel").append(Mustache.render($("#drone-summary-panel-template").html(),
+                    drone));
+                $("#panel-element-header" + drone.id).html(headerHTML);
+                $("#drone-panel-body" + drone.id).html(bodyHTML);
+
+                $("#telem-history-drone-id-select").append($("<option>", { value: drone.id, html: drone.name }));
+
+            });
+
+        });
+    }
+
+    function updateDronePaths() {
+        API.getPaths().success(function(pathList) {
+            $.each(pathList, function(index, path) {
+                for (var i = 0; i < lastDroneList.length; i ++) {
+                    if(lastDroneList[i].uuid == path.vehicle_uuid) {
+                        path.drone = lastDroneList[i];
+                        break;
+                    }
+                }
+                // console.log(JSON.stringify(path))
+                map.setDronePath(path)
+            });
+
+        });
+    }
+
+    function formatJS(obj) {
+        var ret = "<ul>";
+        for (var i in obj) {
+            ret += "<li>" + i + ": " + JSON.stringify(obj[i]) + "</li>"
+        }
+        ret += "</ul>";
+        return ret;
+    }
+    </script>
+    <script id="drone-summary-header-template" type="text/template">
+        {{name}}<span class="glyphicon glyphicon-flash " style="{{online_icon_visibility}}" id="online_indicator{{id}}"></span>
+    </script>
+    <script id="drone-summary-body-template" type="text/template">
+        <div>System ID: {{id}}</div>
+        <div>Comment: {{comment}}</div>
+        <div>Online: {{online}}</div>
+        <div>UUID: {{uuid}}</div>
+        <div>Registered: {{active}}
+            <button type="button" class="btn btn-success ladda-button" id="registerDrone{{id}}" style="{{register_btn_visibility}}" data-style="zoom-in" onclick="uuidToRegister = '{{uuid}}';$('#register-drone-dialog').modal('show');return false;"><span class=" ladda-label">    Register</span>
+            </button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger ladda-button" id="deleteDrone{{id}}" data-style="zoom-in"><span class=" ladda-label">Delete</span> </button>
+        </div>
+        <script>
+        $('#deleteDrone{{id}}').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            API.deleteDrone({{id}})
+                .always(function() {
+                    l.stop();
+                })
+                .success(function(dronedata) {
+                    updateDroneList();
+                });
+            return false;
+        });
+        </script>
+    </script>
+    <script id="drone-summary-panel-template" type="text/template">
+        <div class="panel panel-default" id="dronePanel{{id}}">
+            <div class="panel-heading">
+                <a class="panel-title collapsed" data-toggle="collapse" data-parent="#drone-summary-panel" href="#panel-element-{{id}}" id="panel-element-header{{id}}">
+                </a>
+            </div>
+            <div id="panel-element-{{id}}" class="panel-collapse collapse">
+                <div class="panel-body" id="drone-panel-body{{id}}">
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="zone-popup-template" type="text/template">
+        <h3 style="text-align: center;">
+                    {{zone_id}}
+        </h3>
+        <button type="button" style="margin-left: 50" class="btn btn-xs btn-danger" onclick="API.deleteNoFlyZone({{zone_id}}).success(function() {console.log('zone deleted. ')});">
+            Delete
+        </button>
+    </script>
+    <script id="drone-path-template" type="text/template">
+        <div style="text-align: center;">
+            Path for {{drone.name}}
+        </div>
+        <button type="button" style="margin-left: 50" class="btn btn-xs btn-danger" onclick="API.deleteDronePath({{id}}).success(function() {console.log('path deleted. ')});">
+            Delete
+        </button>
+    </script>
+<!-- {"vcc": 4.671, , , "heading": 0, "attitude": {"yaw": 0, "roll": 0.04957344010472298, "pitch": 0.06308857351541519}, , "velocity": [0.26, -0.77, -0.26], "timestamp": "2016-03-09T20:14:17.545689+03:00",  "is_armable": false, , "nofly_zone_status": { "indexes": []}} -->
+    <script id="telemetry-log-template" type="text/template">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{fmtTimestamp}}</h3>
+          </div>
+          <div class="panel-body">
+            <dl class="dl-horizontal">
+            {{#text}}
+            <dt>Message</dt>
+            <dd>{{text}}</dd>
+            {{/text}}
+            {{^text}}
+
+            {{#system_status}}
+            <dt>System status</dt>
+            <dd>{{system_status}}</dd>
+            {{/system_status}}
+
+            {{#mode}}
+            <dt>Pilot mode</dt>
+            <dd>{{mode}}</dd>
+            {{/mode}}
+
+            {{#nofly_zone_status}}
+            <dt>Inside non-fly zones</dt>
+            
+            {{#nofly_zone_status.inside}}
+                {{#nofly_zone_status.indexes}}
+                <dd>*{{.}}</dd>
+                {{/nofly_zone_status.indexes}}
+            {{/nofly_zone_status.inside}}
+            {{^nofly_zone_status.inside}}
+            <dd>No</dd>
+            {{/nofly_zone_status.inside}}
+            {{/nofly_zone_status}}
+
+            
+            <dt>Is armed</dt>
+            <dd>{{armed}}</dd>
+            
+
+            {{#battery}}
+            <dt>Battery</dt>
+            <dd>{{battery.voltage}}V</dd>
+            <dd>{{battery.current}}A</dd>
+            {{/battery}}
+
+            {{#location}}
+            <dt>Location</dt>
+            <dd>Alt: {{location.alt}}m</dd>
+            <dd>Lat: {{location.lat}}°</dd>
+            <dd>Lon: {{location.lon}}°</dd>
+            {{/location}}
+
+            {{#gps_status}}
+            <dt>GPS status</dt>
+            <dd>Fix type: {{gps_status.fix_type}}</dd>
+            <dd>Sat. count: {{gps_status.sat_count}}</dd>
+            {{/gps_status}}
+            {{/text}}
+            </dl>
+          </div>
+        </div>
+    </script>
+
+
+    <script id="drone-popup-template" type="text/template">
+        <h3 style="text-align: center;">
+            {{name}}
+        </h3>
+        <dl class="dl-horizontal">
+            {{#location.alt}}
+            <dt>Altitude</dt>
+            <dd>{{location.alt}}m</dd>
+            {{/location.alt}}
+            <dt>No fly zone status</dt>
+            <dd>
+                {{#nofly_zone_status.inside}} Inside {{zones_verb}}
+                <!-- If {nofly_zone_status.inside: true} -->
+                {{/nofly_zone_status.inside}} {{^nofly_zone_status.inside}} Outside
+                <!-- If {nofly_zone_status.inside: false} -->
+                {{/nofly_zone_status.inside}}
+            </dd>
+            <dt>Fly mode</dt>
+            <dd>{{mode}}</dd>
+            <dt>Armed</dt>
+            <dd>
+                {{#armed}} True
+                <!-- If {armed: true} -->
+                {{/armed}} {{^armed}} False
+                <!-- If {armed: false} -->
+                {{/armed}}
+            </dd>
+            <dt>Armable</dt>
+            <dd>
+                {{#is_armable}} True
+                <!-- If {is_armable: true} -->
+                {{/is_armable}} {{^is_armable}} False
+                <!-- If {is_armable: false} -->
+                {{/is_armable}}
+            </dd>
+            <dt>Battery</dt>
+            <dd>Current: {{battery.current}}A</dd>
+            <dd>Voltage: {{battery.voltage}}V</dd>
+            <dt>GPS sat.count</dt>
+            <dd>{{gps_status.sat_count}}</dd>
+            <dt>System status</dt>
+            <dd>{{system_status}}</dd>
+
+            <dt>Mission state</dt>
+            <dd>{{mission_state}}</dd>
+            <dt>Going to point</dt>
+            <dd>{{next_point}}</dd>
+        </dl>
+        <button type="button" style="margin-left: 50" class="btn btn-xs btn-primary" onclick="currentDrone=API.drones_telemetry['{{drone_info.id}}'].drone_info; map.polygonDrawer.enable();">
+            Set waypoints
+        </button>
+        <!-- <button type="button" style="margin-left: 50" class="btn btn-sm btn-warning" onclick="API.setArmed(true, '{{uuid}}');">
+                                        Arm
+        </button> -->
+        <button type="button" style="margin-left: 50" {{^is_armable}}disabled=true{{/is_armable}} class="btn btn-xs btn-danger" onclick="API.setArmed(true, '{{drone_info.uuid}}');">
+            Arm
+        </button>
+        <button type="button" style="margin-left: 50" {{^armed}}disabled=true{{/armed}} class="btn btn-xs btn-danger" onclick="API.takeoff('{{drone_info.uuid}}');">
+            Takeoff
+        </button>
+        <button type="button" style="margin-left: 50" {{^armed}}disabled=true{{/armed}} class="btn btn-xs btn-info" onclick="API.startMission('{{drone_info.uuid}}');">
+            Fly!
+        </button>
+        <button type="button" style="margin-left: 50" {{^armed}}disabled=true{{/armed}} class="btn btn-xs btn-info" onclick="API.landOn('{{drone_info.uuid}}');">
+            Land on
+        </button>
+        <script>
+        console.log('ffffuuuu')
+        </script>
+    </script>
+    <div class="modal fade" id="new-drone-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-plus-sign"></span> Add a drone</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="inputUUID">
+                                Bounder.io Module Serial Number
+                            </label>
+                            <input type="text" class="form-control" id="inputUUID">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNAME">
+                                Name
+                            </label>
+                            <input type="text" class="form-control" id="inputNAME">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputComment">
+                                Comment
+                            </label>
+                            <input type="text" class="form-control" id="inputComment">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <button type="button" class="btn btn-default btn-success ladda-button" id="submitNewDrone" data-style="zoom-in"><span class=" ladda-label">Submit</span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-drone-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-plus-sign"></span> Register your a drone</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="inputCode">
+                                Confirmation code
+                            </label>
+                            <input type="text" class="form-control" id="inputCode">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <button type="button" class="btn btn-default btn-success ladda-button" id="registerDroneSubmit" data-style="zoom-in"><span class=" ladda-label">Submit</span> </button>
+                </div>
+            </div>
+        </div>
+        <script>
+        var uuidToRegister = ""
+        </script>
+    </div>
+</body>
+
+</html>

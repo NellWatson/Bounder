@@ -1,0 +1,50 @@
+The system consists of several parts.
+
+1. Client device. It is the the further development of our prototype.
+It has a 3g connection, so we assume that it can always connect to globally available web server (by domain name bounder.io, for example)
+Also it runs Linux, so we can use virtually all existing software here.
+In the future, the number of this client devices is unlimited.
+The main purpose of this device is to preprocess messages from Pixhawk and send them to the Server.
+And also to receive commands from the server and to send them to Pixhawk.
+Python service will be used here.
+We should create a way to equip every client device with some unique ID (or to generate it from different hardware ids of Pixhawk and Raspberry).
+We must be sure that there is strong one-to-one connection between the user acсount in our system and every client device belongs to this user.
+There are a lot of different solutions to achieve this, even something like 2-factor authorization.
+
+2. Webserver. It receives incoming connections from (1) and provides the backend for webinterface and (may be in the future) the backend for mobile applications, 
+desktop apllications or any service, which will be able to use our API.
+It allows to register new users, supports user permission management, receives data from client devices and saves all activity to the database.
+
+    Features:
+    – WebApi for communication with different user interfaces and client devices. It can be REST api for requests like authorization and one-time queries 
+    and WebSocket connections for real-time constantly updated data.
+        •login api for client devices and for enduser interfaces
+        •websocket api for client device communication. bidirectional communication with every connected client device. 
+            Event log, error log and status messages (it can be the whole data from mavlink, actually) go from device to server. 
+            Different commands and requests go from the server to devices (like uploading of new waypoints, start/stop commands and so on).
+        •api for access and manipulation of different user data (registered client devices, logs, fly history, errors, messages, waypoints and others)
+        •websocket api for enduser interface to access realtime data (drones coordinates, status and so on)
+    – Every event should be placed into the DB, as well as messages from the client devices.
+    – Every connection should be encrypted and every action should be authorized. 
+    – Geo data calculation. Every user-provided new waypoint set should be checked by the allowed areas database before uploading to device. 
+    This database is common for all users and can be edited by the admin. 
+
+I suggest to use Python/Django for this web backend and Tornado for websockets server. Every connection is https connection, so we will be protected 
+ any unwanted or malicious users/attackers
+Also all client devices and users will be authorized (device hardware id/password for client devices, login/password or social network authorization for endusers).
+Postgresql with postgis can be used to store all data and to work with geo-calculations.
+Using REST web API and Websockets is a good choise, in my opinion, because it allows to create very different clients quite easily: 
+these techologies are supported in virtually all languages and frameworks (as well as HTTPS).
+Websockets performance should be enough, as my experience tells me.
+If the server stay online, every user and every client device are  able to work with the system as long as they are connected to the Internet
+
+3. WebInterface.
+    Features:
+    – A user can sign up and login
+    – explore different statistics
+    – register new client devices
+    – create waypoints and upload them to the selected client device.
+    – track drones on the map online
+
+I am not specialized on frontend web development, but we can create a prototype with Bootstrap, for example. And pretty standard html/javascript, of course.
+The part with maps will be the same as I've already implemented in the latest version.

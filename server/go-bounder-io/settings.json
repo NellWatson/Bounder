@@ -1,0 +1,12 @@
+{
+    "ip": "localhost", 
+    "port": 5432, 
+    "login": "Tucher", 
+    "pass": "19890409tucher", 
+    "name": "bounder-io",
+    "Port_to_listen": 8080,
+    "LogPath": "/Users/Tucher/bounder-io/logs/test_log.log",
+    "MainServerPollingDelay": 10000,
+    "RequireAuthForPostUsers": false,
+    "ServeStatic": true
+}

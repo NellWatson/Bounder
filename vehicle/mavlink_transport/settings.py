@@ -1,0 +1,5 @@
+# ADDRESS = 'ws://127.0.0.1:8080/ws'
+ADDRESS = 'wss://api.bounder.io/ws'
+# PIXHAWK_ADDRESS = "127.0.0.1:14550"
+PIXHAWK_ADDRESS = "192.168.1.137:14550"
+SEND_DELAY = 0.3

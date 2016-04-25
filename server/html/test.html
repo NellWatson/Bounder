@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bounder.io test vehicle</title>
+    <meta name="author" content="Bounder.io">
+</head>
+
+<body>
+    <script>
+    var socket = null;
+
+    function conn() {
+        var host = (window.location.protocol == "https:" ? "wss://" : "ws://") + window.location.host + "/ws";
+        if (socket == null || socket.readyState != socket.OPEN) {
+            if(socket != null) socket.close()
+            socket = new WebSocket(host + "?uuid=" + '123456789');
+            socket.onclose = function() {
+                console.log('closed')
+                // conn();
+            }
+
+            socket.onopen = function() {
+                console.log('opened')
+                socket.send(JSON.stringify({
+                    fff: 111
+                }));
+            }
+
+            socket.onmessage = function(msg) {
+                var obj = JSON.parse(msg.data);
+                // console.log("received:", obj)
+                if (('ping' in obj) && obj.ping == 'ping') {
+                    // console.log('→')
+                    socket.send(JSON.stringify({
+                        type: 'ping',
+                        ping: 'pong'
+                    }));
+                }
+                else {
+                    console.log("received:", obj)
+                }
+            }
+        }
+    }
+    window.setInterval(conn, 500);
+    // conn();
+    </script>
+</body>
+
+</html>

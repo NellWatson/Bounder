@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bounder.io</title>
+    <meta name="author" content="Bounder.io">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet.draw.css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="lib/leaflet/leaflet.ie.css" />
+        <link rel="stylesheet" href="leaflet.draw.ie.css" />
+        <![endif]-->
+    <link rel="stylesheet" href="css/ladda-themeless.min.css">
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet.draw.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/ladda.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <script src="js/leaflet.awesome-markers.min.js"></script>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid" style="visibility: hidden;" id="main-view">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        
+                        <a class="navbar-brand" href="#">Bounder.io Non-Fly zones administration</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="" id="aboutUserLink"></a>
+                            </li>
+                            <button type="button" class="btn btn-warning navbar-btn" onclick="API.logOut()">
+                                Logout
+                            </button>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div style="padding-top: 50px;" class="row">
+                    <div class="col-md-12">
+                        <div id="map" style="width: 100%; height: 600px;"></div>
+                        
+                    </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="login-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" id="rememberMe">Remember me</label>
+                        </div>
+                        <button type="button" class="btn btn-default btn-success btn-block ladda-button" id="login-btn" data-style="zoom-in"><span class="ladda-label">Login</span> </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Not a member? <a href="#" onclick="$('#sign-up-dialog').modal('show');return false;">Sign Up</a></p>
+                    <!-- <p>Forgot <a href="#">Password?</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sign-up-dialog" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Sign Up (you need to contact Bounder.io team to activate this account)</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <!--  <div class="form-group">
+                            <label for="inputLogin">
+                                Login
+                            </label>
+                            <input type="text" class="form-control" id="inputLogin">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="inputEmail">
+                                Email address
+                            </label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">
+                                Password
+                            </label>
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <button type="button" class="btn btn-default btn-success ladda-button" id="submitLogin" data-style="zoom-in"><span class=" ladda-label">Submit</span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var map = null;
+    $(document).ready(function() {
+        if (localStorage.getItem("rememberMe") === "true")
+            $('#rememberMe').prop('checked', true);
+
+
+        $('#rememberMe').click(function() {
+
+            localStorage.setItem("rememberMe", $('#rememberMe').prop('checked'));
+            // $("#rememberMe").toggle(this.checked);
+        });
+        map = initMap();
+        console.log('loaded');
+
+        map.OnZoneCreated = function(zone) {
+             API.saveGlobalNoFlyZone(zone).success(function(zone) {
+                console.log('saveGlobalNoFlyZone success, waiting for update from ws')
+
+            });
+        }
+        map.ZonePopupCallback = function(zone) {
+            
+            return Mustache.render($("#zone-popup-template").html(), { zone_id: zone.id});
+                 
+        }
+
+        API.onGlobalZones = function(zones) {
+            map.SetGlobalZones(zones)
+        }
+      
+        // $("#wrapper").toggleClass("toggled");
+        $("#login-dialog").modal({
+            backdrop: false,
+            keyboard: false
+        });
+
+        $('#submitLogin').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            API.signUp($('#inputEmail').val(), $('#inputPassword').val())
+                .always(function() {
+                    l.stop();
+                });
+            return false;
+        });
+
+
+        $('#login-btn').click(function(e) {
+            e.preventDefault();
+            var l = Ladda.create(this);
+            l.start();
+            console.log('logging in');
+
+            API.login($('#usrname').val(), $('#psw').val())
+                .always(function() {
+                    l.stop();
+                });
+            return false;
+        });
+        API.onError = function(errMsg) {
+            BootstrapDialog.show({
+                title: 'Server error',
+                message: $('<div></div>').html(errMsg),
+                type: BootstrapDialog.TYPE_WARNING
+            });
+        }
+        API.onLoggedIn = function(u) {
+            user = u;
+            loggedIn = true;
+            $('#main-view').css('visibility', 'visible');
+            $("#login-dialog").modal('hide');
+            $("#sign-up-dialog").modal('hide');
+            $('#aboutUserLink').text(user.login);
+          
+        }
+        API.onConnected = function() {
+            API.getGlobalNoFlyZones().success(function(d) {
+                map.SetGlobalZones(d)
+            });
+            
+        }
+        API.onLoggedOut = function() {
+            $('#main-view').css('visibility', 'hidden')
+            $("#login-dialog").modal({
+                backdrop: false,
+                keyboard: false
+            });
+            $("#sign-up-dialog").modal('hide')
+        };
+       
+        $('#aboutUserLink').click(function(e) {
+            e.preventDefault();
+            BootstrapDialog.show({
+                title: 'About you',
+                message: $('<div></div>').html(formatJS(user)),
+                type: BootstrapDialog.TYPE_INFO
+            });
+        });
+        // console.log('localStorage.getItem("rememberMe")', localStorage.getItem("rememberMe"))
+        if (localStorage.getItem("rememberMe") == "true") {
+            API.tryResumeSession();
+        }
+
+        API.onDeleteGlobalZones = function(zones) {
+            map.deleteNoFlyZones(zones)
+        }
+
+        API.onAddGlobalZones = function(zones) {
+            map.loadNoFlyZones(zones)
+        }
+      
+       
+    });
+    function formatJS(obj) {
+        var ret = "<ul>";
+        for (var i in obj) {
+            ret += "<li>" + i + ": " + JSON.stringify(obj[i]) + "</li>"
+        }
+        ret += "</ul>";
+        return ret;
+    }
+
+    </script>
+
+    <script id="zone-popup-template" type="text/template">
+        <h3 style="text-align: center;">
+                    {{zone_id}}
+        </h3>
+   
+        <button type="button" style="margin-left: 50" class="btn btn-sm btn-danger" onclick="API.deleteGlobalNoFlyZone({{zone_id}}).success(function() {console.log('zone deleted. ')});">
+                                        Delete
+        </button>
+         
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+drone second step confirmation
+email confirmation
+ui
+all objects names editing
+ws transoprt performance tests
+think about all kind of bruteforce attacks

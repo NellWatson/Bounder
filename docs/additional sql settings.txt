@@ -1,0 +1,4 @@
+something like 
+
+CREATE INDEX geodata_index ON
+    geodata_json ((data->>'country_code'), (data->>'asciiname'));
