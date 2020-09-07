@@ -57,4 +57,4 @@ After you set the polygon on the map, you can disconnect the ethernet cable from
         - flashing when you are outside the polygon
         - turned on when you are inside the polygon
 
-11. If RPi is connected to Internet(by a cell modem, for example), you can open api.bounder.io page in any browser and see the drone movement on the map in realtime
+11. If RPi is connected to Internet(by a cell modem, for example), you can open api.bounder.io page in any browser and see the drone movement on the map in realtime.
