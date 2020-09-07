@@ -6,7 +6,7 @@ Unfortunately, accidents with drones are increasingly common, causing personal i
 
 Bounder is your first defense against such liabilities, through live geofencing.
 
-The code was developed for a proprietary project, but we have decided to open source it in the interests AI safety and safeguarding the global community.
+The code was developed as a proprietary project, but we have decided to open source it in the interests AI safety and safeguarding the global community.
 
 Project by @NellWatson, @anishmohammed, and Aleksandr Tuchkov.
 
