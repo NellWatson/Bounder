@@ -4213,167 +4213,102 @@ body.loaded.collection-type-index #content-wrapper { opacity: 1; }
         }
       </style>
     
-          <style id="footer-fix">
-            /* Fix footer background */
-            footer {
-              background-color: #1a1a1a !important;
-              position: relative;
-              z-index: 10;
-            }
-            
-            /* Ensure no background images leak into footer */
-            footer::before,
-            footer::after {
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <style id="comprehensive-footer-styles">
+            /* Hide Stay Informed section completely */
+            #collection-58aadb94e6f2e14e390f0fb0,
+            .newsletter-block,
+            .newsletter-form,
+            .sqs-block-newsletter,
+            form[action*="newsletter"],
+            form[action*="subscribe"],
+            .stay-informed,
+            *:has(> form[action*="newsletter"]) {
               display: none !important;
             }
             
-            /* Fix any parallax or background issues */
-            .parallax-item:last-child {
-              margin-bottom: 0 !important;
+            /* GitHub footer icon - clean and visible */
+            .github-footer-icon {
+              display: inline-block !important;
+              width: 40px !important;
+              height: 40px !important;
+              margin: 0 10px !important;
+              padding: 0 !important;
+              background: transparent !important;
+              border: none !important;
+              transition: opacity 0.3s ease, transform 0.2s ease !important;
+              line-height: 0 !important;
+              vertical-align: middle !important;
             }
             
-            /* Ensure footer stays at bottom */
-            .site-wrapper {
-              min-height: 100vh;
-              display: flex;
-              flex-direction: column;
+            .github-footer-icon svg {
+              width: 40px !important;
+              height: 40px !important;
+              fill: white !important;
+              display: block !important;
             }
             
-            .site-inner-wrapper {
-              flex: 1;
+            .github-footer-icon:hover {
+              opacity: 0.7 !important;
+              transform: scale(1.1) !important;
             }
             
-            /* Fix GitHub icon styling */
-            .social-icons svg,
-            .sqs-svg-icon--wrapper svg,
-            a[href*="github.com"] svg {
-              width: 24px;
-              height: 24px;
-              fill: white;
-              transition: opacity 0.3s ease;
+            /* Social icons list */
+            .sqs-svg-icon--list,
+            .social-icons {
+              text-align: center !important;
+              padding: 20px 0 !important;
+              margin: 0 !important;
             }
             
-            .social-icons a:hover svg,
-            .sqs-svg-icon--wrapper:hover svg,
-            a[href*="github.com"]:hover svg {
-              opacity: 0.7;
+            /* Reduce spacing after GitHub button */
+            .sqs-block-button-container[data-github-button="true"] {
+              margin-bottom: 60px !important;
             }
             
-            /* Hide any stray background elements */
-            body > .parallax-item:last-of-type {
-              z-index: 1;
-            }
-            
-            /* Ensure footer has higher z-index */
+            /* Footer spacing */
             footer,
-            .Footer {
-              z-index: 100;
-              background: #1a1a1a !important;
+            .Footer,
+            .footer-wrapper {
               margin-top: 0 !important;
-            }
-          </style>
-        
-          
-        
-          
-        
-          <style id="ultrathink-github-styles">
-            /* EXACT replication of Squarespace GitHub social icon */
-            .sqs-svg-icon--wrapper {
-              display: inline-block;
-              width: 32px;
-              height: 32px;
-              margin: 0 4px;
-              position: relative;
-              background-color: transparent;
-              border-radius: 50%;
-              transition: all 0.3s ease;
-              vertical-align: middle;
-              line-height: 0;
+              padding-top: 50px !important;
             }
             
+            /* Ensure no extra gap */
+            .page-section:last-of-type:not(footer),
+            .Index-page:last-of-type:not(:has(footer)),
+            .sqs-layout:last-of-type {
+              padding-bottom: 80px !important;
+            }
+            
+            /* Hide any duplicate GitHub icons */
             .sqs-svg-icon--wrapper.github-unauth {
-              background-color: transparent !important;
-            }
-            
-            .sqs-svg-icon--wrapper > div {
-              display: block;
-              width: 100%;
-              height: 100%;
-              position: relative;
-            }
-            
-            .sqs-svg-icon--social {
-              width: 32px;
-              height: 32px;
-              display: block;
-              fill: #ffffff;
-            }
-            
-            .sqs-svg-icon--outer {
-              opacity: 0;
-              transition: opacity 0.3s ease;
-            }
-            
-            .sqs-svg-icon--wrapper:hover .sqs-svg-icon--outer {
-              opacity: 0.3;
-              fill: #ffffff;
-            }
-            
-            .sqs-svg-icon--inner path {
-              fill: #ffffff !important;
-              transition: transform 0.3s ease;
-            }
-            
-            .sqs-svg-icon--wrapper:hover .sqs-svg-icon--inner {
-              transform: scale(0.9);
-              transform-origin: center;
-            }
-            
-            /* GitHub Button styling (exact match) */
-            .sqs-block-button-element[href*="github.com"] {
-              display: inline-block;
-              padding: 25px 46px;
-              background-color: #272727;
-              color: #ffffff;
-              text-decoration: none;
-              font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-              font-size: 15px;
-              font-weight: 500;
-              letter-spacing: 1px;
-              line-height: 1.6em;
-              text-transform: uppercase;
-              transition: opacity 0.3s ease, transform 0.3s ease;
-              border: none;
-              cursor: pointer;
-            }
-            
-            .sqs-block-button-element[href*="github.com"]:hover {
-              opacity: 0.8;
-              transform: translateY(-2px);
-            }
-            
-            /* Footer social icons container */
-            .sqs-svg-icon--list {
-              text-align: center;
-              padding: 20px 0;
-            }
-            
-            /* Ensure no conflicting styles */
-            footer a[href*="github.com"]:not(.sqs-block-button-element):not(.sqs-svg-icon--wrapper) {
               display: none !important;
             }
             
             /* Mobile responsive */
             @media (max-width: 768px) {
-              .sqs-svg-icon--wrapper {
-                width: 28px;
-                height: 28px;
+              .github-footer-icon {
+                width: 35px !important;
+                height: 35px !important;
               }
               
-              .sqs-svg-icon--social {
-                width: 28px;
-                height: 28px;
+              .github-footer-icon svg {
+                width: 35px !important;
+                height: 35px !important;
+              }
+              
+              .sqs-block-button-container[data-github-button="true"] {
+                margin-bottom: 40px !important;
               }
             }
           </style>
@@ -4603,18 +4538,9 @@ body.loaded.collection-type-index #content-wrapper { opacity: 1; }
     }
   </style>
   <nav class="sqs-svg-icon--list" style="; display: block; position: static; max-width: 960px; width: 100%; height: 38.5px; border: 0px none rgb(255, 255, 255); background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box; background-color: rgba(0, 0, 0, 0); background-position: 0% 0%; background-repeat: repeat; color: rgb(255, 255, 255); font-family: proxima-nova; font-size: 15px; font-weight: 400; line-height: 24px; text-align: center; opacity: 1; visibility: visible; overflow: visible; flex: 0 1 auto; grid: none / none / none / row / auto / auto; ">
-    <a href="https://github.com/NellWatson/Bounder" target="_blank" class="sqs-svg-icon--wrapper github-unauth" aria-label="GitHub" rel="noopener noreferrer" title="GitHub">
-      <div>
-        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
-          <g class="sqs-svg-icon--outer">
-            <circle cx="32" cy="32" r="31" fill="transparent"></circle>
-          </g>
-          <g class="sqs-svg-icon--inner">
-            <path fill="#ffffff" d="M32 0C14.327 0 0 14.327 0 32c0 14.147 9.169 26.133 21.885 30.365 1.598.296 2.115-.696 2.115-1.539v-5.957c-8.901 1.936-10.755-3.776-10.755-3.776-1.456-3.699-3.555-4.683-3.555-4.683-2.904-1.987.221-1.945.221-1.945 3.213.224 4.904 3.299 4.904 3.299 2.853 4.891 7.485 3.477 9.312 2.659.285-2.067 1.115-3.48 2.032-4.277-7.107-.813-14.579-3.557-14.579-15.816 0-3.496 1.251-6.349 3.296-8.589-.331-.808-1.427-4.064.312-8.469 0 0 2.688-.859 8.803 3.28 2.552-.709 5.288-1.064 8.008-1.077 2.72.013 5.459.368 8.016 1.077 6.107-4.139 8.787-3.28 8.787-3.28 1.744 4.413.648 7.661.317 8.469 2.053 2.24 3.293 5.093 3.293 8.589 0 12.291-7.485 14.992-14.616 15.789 1.147.992 2.195 2.939 2.195 5.925v8.781c0 .851.507 1.851 2.136 1.536C54.843 58.117 64 45.147 64 32 64 14.327 49.673 0 32 0z"></path>
-          </g>
-        </svg>
-      </div>
-    </a>
+    <a href="https://github.com/NellWatson/Bounder" target="_blank" class="github-footer-icon" aria-label="GitHub" rel="noopener noreferrer" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+        </svg></a>
   </nav>
 </div>
 </div></div></div></div></div>
