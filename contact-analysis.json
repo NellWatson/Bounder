@@ -1,0 +1,159 @@
+{
+  "original": {
+    "navigation": [
+      {
+        "text": "Contact",
+        "href": "/contact",
+        "isContact": true
+      },
+      {
+        "text": "",
+        "href": "/",
+        "isContact": false
+      },
+      {
+        "text": "Contact",
+        "href": "/contact",
+        "isContact": true
+      },
+      {
+        "text": "Terms & Conditions",
+        "href": "/new-page",
+        "isContact": false
+      },
+      {
+        "text": "Privacy & Cookies",
+        "href": "/privacy",
+        "isContact": false
+      },
+      {
+        "text": "",
+        "href": "https://github.com/NellWatson/Bounder",
+        "isContact": false
+      }
+    ],
+    "pageTitle": "",
+    "pageLayout": {},
+    "formStructure": {
+      "exists": true,
+      "action": "https://www.bounder.io/contact",
+      "method": "get",
+      "width": 628.6640625,
+      "fields": [
+        {
+          "type": "text",
+          "name": "fname",
+          "placeholder": "",
+          "required": false,
+          "label": "First Name",
+          "className": "ngonnDl0lqs7ZArA"
+        },
+        {
+          "type": "text",
+          "name": "lname",
+          "placeholder": "",
+          "required": false,
+          "label": "Last Name",
+          "className": "ngonnDl0lqs7ZArA"
+        },
+        {
+          "type": "email",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "label": "Email Address(required)",
+          "className": "ngonnDl0lqs7ZArA"
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "label": "Phone",
+          "className": "ngonnDl0lqs7ZArA"
+        },
+        {
+          "type": "textarea",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "label": "Message(required)",
+          "className": "qj2U4ppWTRohr5rP"
+        }
+      ],
+      "styling": {
+        "padding": "0px",
+        "margin": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    },
+    "styling": {
+      "backgroundColor": "rgb(23, 23, 23)",
+      "fontFamily": "proxima-nova",
+      "fontSize": "15px",
+      "color": "rgb(54, 54, 54)"
+    }
+  },
+  "cloned": {
+    "navigation": [
+      "Contact",
+      "Contact",
+      "Terms & Conditions",
+      "Privacy & Cookies"
+    ],
+    "hasContactLink": true,
+    "formExists": true,
+    "formFields": [
+      {
+        "type": "text",
+        "name": "first_name",
+        "placeholder": "John"
+      },
+      {
+        "type": "text",
+        "name": "last_name",
+        "placeholder": "Doe"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "john.doe@example.com"
+      },
+      {
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "+1 234 567 8900"
+      },
+      {
+        "type": "text",
+        "name": "organization",
+        "placeholder": "Your company or organization"
+      },
+      {
+        "type": "select-one",
+        "name": "subject"
+      },
+      {
+        "type": "textarea",
+        "name": "message",
+        "placeholder": "Please tell us how we can help you with drone safety and no-fly zone management..."
+      },
+      {
+        "type": "text",
+        "name": "_gotcha",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "_next",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "_subject",
+        "placeholder": ""
+      }
+    ]
+  }
+}
