@@ -207,6 +207,107 @@
               margin-top: 0 !important;
             }
           </style>
+        
+          <style id="ultrathink-github-styles">
+            /* EXACT replication of Squarespace GitHub social icon */
+            .sqs-svg-icon--wrapper {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              margin: 0 4px;
+              position: relative;
+              background-color: transparent;
+              border-radius: 50%;
+              transition: all 0.3s ease;
+              vertical-align: middle;
+              line-height: 0;
+            }
+            
+            .sqs-svg-icon--wrapper.github-unauth {
+              background-color: transparent !important;
+            }
+            
+            .sqs-svg-icon--wrapper > div {
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: relative;
+            }
+            
+            .sqs-svg-icon--social {
+              width: 32px;
+              height: 32px;
+              display: block;
+              fill: #ffffff;
+            }
+            
+            .sqs-svg-icon--outer {
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            }
+            
+            .sqs-svg-icon--wrapper:hover .sqs-svg-icon--outer {
+              opacity: 0.3;
+              fill: #ffffff;
+            }
+            
+            .sqs-svg-icon--inner path {
+              fill: #ffffff !important;
+              transition: transform 0.3s ease;
+            }
+            
+            .sqs-svg-icon--wrapper:hover .sqs-svg-icon--inner {
+              transform: scale(0.9);
+              transform-origin: center;
+            }
+            
+            /* GitHub Button styling (exact match) */
+            .sqs-block-button-element[href*="github.com"] {
+              display: inline-block;
+              padding: 25px 46px;
+              background-color: #272727;
+              color: #ffffff;
+              text-decoration: none;
+              font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-size: 15px;
+              font-weight: 500;
+              letter-spacing: 1px;
+              line-height: 1.6em;
+              text-transform: uppercase;
+              transition: opacity 0.3s ease, transform 0.3s ease;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .sqs-block-button-element[href*="github.com"]:hover {
+              opacity: 0.8;
+              transform: translateY(-2px);
+            }
+            
+            /* Footer social icons container */
+            .sqs-svg-icon--list {
+              text-align: center;
+              padding: 20px 0;
+            }
+            
+            /* Ensure no conflicting styles */
+            footer a[href*="github.com"]:not(.sqs-block-button-element):not(.sqs-svg-icon--wrapper) {
+              display: none !important;
+            }
+            
+            /* Mobile responsive */
+            @media (max-width: 768px) {
+              .sqs-svg-icon--wrapper {
+                width: 28px;
+                height: 28px;
+              }
+              
+              .sqs-svg-icon--social {
+                width: 28px;
+                height: 28px;
+              }
+            }
+          </style>
         </head>
 <body>
     <nav>
