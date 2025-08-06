@@ -1,0 +1,146 @@
+[
+  {
+    "page": "homepage",
+    "viewport": "desktop",
+    "diffPixels": 2045972,
+    "totalPixels": 2073600,
+    "percentage": "98.67",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "homepage",
+    "viewport": "tablet",
+    "diffPixels": 755953,
+    "totalPixels": 786432,
+    "percentage": "96.12",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "homepage",
+    "viewport": "mobile",
+    "diffPixels": 278167,
+    "totalPixels": 304500,
+    "percentage": "91.35",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "contact",
+    "viewport": "desktop",
+    "diffPixels": 1033598,
+    "totalPixels": 2073600,
+    "percentage": "49.85",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "contact",
+    "viewport": "tablet",
+    "diffPixels": 314090,
+    "totalPixels": 786432,
+    "percentage": "39.94",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "contact",
+    "viewport": "mobile",
+    "diffPixels": 133942,
+    "totalPixels": 304500,
+    "percentage": "43.99",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "privacy",
+    "viewport": "desktop",
+    "diffPixels": 763850,
+    "totalPixels": 2073600,
+    "percentage": "36.84",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "privacy",
+    "viewport": "tablet",
+    "diffPixels": 276722,
+    "totalPixels": 786432,
+    "percentage": "35.19",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "privacy",
+    "viewport": "mobile",
+    "diffPixels": 129949,
+    "totalPixels": 304500,
+    "percentage": "42.68",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "terms",
+    "viewport": "desktop",
+    "diffPixels": 630619,
+    "totalPixels": 2073600,
+    "percentage": "30.41",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "terms",
+    "viewport": "tablet",
+    "diffPixels": 270559,
+    "totalPixels": 786432,
+    "percentage": "34.40",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "terms",
+    "viewport": "mobile",
+    "diffPixels": 137340,
+    "totalPixels": 304500,
+    "percentage": "45.10",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "gallery",
+    "viewport": "desktop",
+    "diffPixels": 1871102,
+    "totalPixels": 2073600,
+    "percentage": "90.23",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "gallery",
+    "viewport": "tablet",
+    "diffPixels": 635183,
+    "totalPixels": 786432,
+    "percentage": "80.77",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "gallery",
+    "viewport": "mobile",
+    "diffPixels": 236893,
+    "totalPixels": 304500,
+    "percentage": "77.80",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "ride-to-live",
+    "viewport": "desktop",
+    "diffPixels": 941436,
+    "totalPixels": 2073600,
+    "percentage": "45.40",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "ride-to-live",
+    "viewport": "tablet",
+    "diffPixels": 556044,
+    "totalPixels": 786432,
+    "percentage": "70.70",
+    "status": "❌ CHECK"
+  },
+  {
+    "page": "ride-to-live",
+    "viewport": "mobile",
+    "diffPixels": 185804,
+    "totalPixels": 304500,
+    "percentage": "61.02",
+    "status": "❌ CHECK"
+  }
+]

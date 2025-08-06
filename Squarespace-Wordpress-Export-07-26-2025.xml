@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <title>Bounder</title>
+    <link>http://www.bounder.io</link>
+    <pubDate>Mon, 20 Jul 2015 13:23:13 +0000</pubDate>
+    <description />
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:author>
+      <wp:author_id>-703197823</wp:author_id>
+      <wp:author_login>eleanor.watson@singularityu.org</wp:author_login>
+      <wp:author_email>eleanor.watson@singularityu.org</wp:author_email>
+      <wp:author_display_name><![CDATA[Nell Watson]]></wp:author_display_name>
+      <wp:author_first_name><![CDATA[Nell]]></wp:author_first_name>
+      <wp:author_last_name><![CDATA[Watson]]></wp:author_last_name>
+    </wp:author>
+    <wp:author>
+      <wp:author_id>346151629</wp:author_id>
+      <wp:author_login>bsweeney@squarespace.com</wp:author_login>
+      <wp:author_email>bsweeney@squarespace.com</wp:author_email>
+      <wp:author_display_name><![CDATA[Billy Sweeney]]></wp:author_display_name>
+      <wp:author_first_name><![CDATA[Billy]]></wp:author_first_name>
+      <wp:author_last_name><![CDATA[Sweeney]]></wp:author_last_name>
+    </wp:author>
+    <wp:category>
+      <wp:cat_name><![CDATA[null - null]]></wp:cat_name>
+      <wp:category_nicename>null-null</wp:category_nicename>
+      <wp:category_parent />
+    </wp:category>
+    <item>
+      <link>/new-page</link>
+      <title>Terms &amp; Conditions</title>
+      <pubDate>Mon, 20 Jul 2015 14:45:04 +0000</pubDate>
+      <content:encoded><![CDATA[<div class="sqs-html-content">
+  <h1 class="text-align-center">BOUNDER WEBSITE TERMS AND CONDITIONS ("AGREEMENT")</h1><p style="text-align:justify">This Agreement was last modified on December 20th, 2014.</p><p style="text-align:justify">Please read these Terms and Conditions ("Agreement", "Terms and Conditions") carefully before using www.bounder.io ("the Site") operated by Bounder ("us", "we", or "our"). This Agreement sets forth the legally binding terms and conditions for your use of the Site at www.bounder.io.</p><p style="text-align:justify">By accessing or using the Site in any manner, including, but not limited to, visiting or browsing the Site or contributing content or other materials to the Site, you agree to be bound by these Terms and Conditions. Capitalized terms are defined in this Agreement.</p><p style="text-align:justify"><strong>Intellectual Property</strong><br />The Site and its original content, features and functionality are owned by Bounder and are protected by international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws.</p><p style="text-align:justify"><strong>Termination</strong><br />We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with you. All provisions of this Agreement that by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p><p style="text-align:justify"><strong>Links To Other Sites</strong><br />Our Site may contain links to third-party sites that are not owned or controlled by Bounder.</p><p style="text-align:justify">Bounder has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services. We strongly advise you to read the terms and conditions and privacy policy of any third-party site that you visit.</p><p style="text-align:justify"><strong>Governing Law</strong><br />This Agreement (and any further rules, polices, or guidelines incorporated by reference) shall be governed and construed in accordance with the laws of London, United Kingdom, without giving effect to any principles of conflicts of law.</p><p style="text-align:justify"><strong>Changes To This Agreement</strong><br />We reserve the right, at our sole discretion, to modify or replace these Terms and Conditions by posting the updated terms on the Site. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms and Conditions.</p><p style="text-align:justify">Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Site or discontinue any use of the Site immediately.</p><p style="text-align:justify"><strong>Contact Us</strong><br />If you have any questions about this Agreement, please contact us.</p><p style="text-align:justify">With permission from&nbsp;<a href="http://termsfeed.com/terms-conditions/generator/">TermsFeed</a></p>
+</div>]]></content:encoded>
+      <wp:post_name>new-page</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>0</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/contact</link>
+      <title>Contact</title>
+      <pubDate>Mon, 20 Jul 2015 14:50:33 +0000</pubDate>
+      <content:encoded><![CDATA[<script type="application/json" id="form-context-55acf948e4b0f1200fceacf8" class="sqs-form-block-context">{"secureUrl":"https://nell-watson-ck9c.squarespace.com","formSubmitButtonText":"Submit Enquiry","formSubmissionMessage":{"html":"Thank you!"},"submissionVerticalAlignment":"","buttonAlignment":"left","submissionMessageTextStyle":"","formName":"New Form","submissionAnimation":"","formId":"55acf948e4b0f1200fceacf8","useLightbox":false,"firstFieldHighlightType":"","useFormsJs":true,"submissionTextAlignment":"","formFieldFormats":{"initialPhoneFormat":{"id":0,"type":"PHONE_NUMBER","country":"BE","labelLocale":"en-US","fields":[{"type":"FIELD","label":"1","identifier":"1","length":3,"required":false,"metadata":{}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"2","identifier":"2","length":2,"required":false,"metadata":{}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"3","identifier":"3","length":2,"required":false,"metadata":{}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"4","identifier":"4","length":13,"required":false,"metadata":{}}]},"initialNameOrder":"GIVEN_FIRST","initialAddressFormat":{"id":0,"type":"ADDRESS","country":"BE","labelLocale":"en","fields":[{"type":"FIELD","label":"Address Line 1","identifier":"Line1","length":0,"required":true,"metadata":{"autocomplete":"address-line1"}},{"type":"SEPARATOR","label":"\n","identifier":"Newline","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"Address Line 2","identifier":"Line2","length":0,"required":false,"metadata":{"autocomplete":"address-line2"}},{"type":"SEPARATOR","label":"\n","identifier":"Newline","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"Postal Code","identifier":"Zip","length":0,"required":true,"metadata":{"autocomplete":"postal-code"}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"City","identifier":"City","length":0,"required":true,"metadata":{"autocomplete":"address-level1"}}]},"countries":[{"name":"Afghanistan","code":"AF","phoneCode":"+93"},{"name":"Åland Islands","code":"AX","phoneCode":"+358"},{"name":"Albania","code":"AL","phoneCode":"+355"},{"name":"Algeria","code":"DZ","phoneCode":"+213"},{"name":"American Samoa","code":"AS","phoneCode":"+1"},{"name":"Andorra","code":"AD","phoneCode":"+376"},{"name":"Angola","code":"AO","phoneCode":"+244"},{"name":"Anguilla","code":"AI","phoneCode":"+1"},{"name":"Antigua & Barbuda","code":"AG","phoneCode":"+1"},{"name":"Argentina","code":"AR","phoneCode":"+54"},{"name":"Armenia","code":"AM","phoneCode":"+374"},{"name":"Aruba","code":"AW","phoneCode":"+297"},{"name":"Ascension Island","code":"AC","phoneCode":"+247"},{"name":"Australia","code":"AU","phoneCode":"+61"},{"name":"Austria","code":"AT","phoneCode":"+43"},{"name":"Azerbaijan","code":"AZ","phoneCode":"+994"},{"name":"Bahamas","code":"BS","phoneCode":"+1"},{"name":"Bahrain","code":"BH","phoneCode":"+973"},{"name":"Bangladesh","code":"BD","phoneCode":"+880"},{"name":"Barbados","code":"BB","phoneCode":"+1"},{"name":"Belarus","code":"BY","phoneCode":"+375"},{"name":"Belgium","code":"BE","phoneCode":"+32"},{"name":"Belize","code":"BZ","phoneCode":"+501"},{"name":"Benin","code":"BJ","phoneCode":"+229"},{"name":"Bermuda","code":"BM","phoneCode":"+1"},{"name":"Bhutan","code":"BT","phoneCode":"+975"},{"name":"Bolivia","code":"BO","phoneCode":"+591"},{"name":"Bosnia & Herzegovina","code":"BA","phoneCode":"+387"},{"name":"Botswana","code":"BW","phoneCode":"+267"},{"name":"Brazil","code":"BR","phoneCode":"+55"},{"name":"British Indian Ocean Territory","code":"IO","phoneCode":"+246"},{"name":"British Virgin Islands","code":"VG","phoneCode":"+1"},{"name":"Brunei","code":"BN","phoneCode":"+673"},{"name":"Bulgaria","code":"BG","phoneCode":"+359"},{"name":"Burkina Faso","code":"BF","phoneCode":"+226"},{"name":"Burundi","code":"BI","phoneCode":"+257"},{"name":"Cambodia","code":"KH","phoneCode":"+855"},{"name":"Cameroon","code":"CM","phoneCode":"+237"},{"name":"Canada","code":"CA","phoneCode":"+1"},{"name":"Cape Verde","code":"CV","phoneCode":"+238"},{"name":"Caribbean Netherlands","code":"BQ","phoneCode":"+599"},{"name":"Cayman Islands","code":"KY","phoneCode":"+1"},{"name":"Central African Republic","code":"CF","phoneCode":"+236"},{"name":"Chad","code":"TD","phoneCode":"+235"},{"name":"Chile","code":"CL","phoneCode":"+56"},{"name":"China","code":"CN","phoneCode":"+86"},{"name":"Christmas Island","code":"CX","phoneCode":"+61"},{"name":"Cocos (Keeling) Islands","code":"CC","phoneCode":"+61"},{"name":"Colombia","code":"CO","phoneCode":"+57"},{"name":"Comoros","code":"KM","phoneCode":"+269"},{"name":"Congo - Brazzaville","code":"CG","phoneCode":"+242"},{"name":"Congo - Kinshasa","code":"CD","phoneCode":"+243"},{"name":"Cook Islands","code":"CK","phoneCode":"+682"},{"name":"Costa Rica","code":"CR","phoneCode":"+506"},{"name":"Côte d’Ivoire","code":"CI","phoneCode":"+225"},{"name":"Croatia","code":"HR","phoneCode":"+385"},{"name":"Cuba","code":"CU","phoneCode":"+53"},{"name":"Curaçao","code":"CW","phoneCode":"+599"},{"name":"Cyprus","code":"CY","phoneCode":"+357"},{"name":"Czechia","code":"CZ","phoneCode":"+420"},{"name":"Denmark","code":"DK","phoneCode":"+45"},{"name":"Djibouti","code":"DJ","phoneCode":"+253"},{"name":"Dominica","code":"DM","phoneCode":"+1"},{"name":"Dominican Republic","code":"DO","phoneCode":"+1"},{"name":"Ecuador","code":"EC","phoneCode":"+593"},{"name":"Egypt","code":"EG","phoneCode":"+20"},{"name":"El Salvador","code":"SV","phoneCode":"+503"},{"name":"Equatorial Guinea","code":"GQ","phoneCode":"+240"},{"name":"Eritrea","code":"ER","phoneCode":"+291"},{"name":"Estonia","code":"EE","phoneCode":"+372"},{"name":"Eswatini","code":"SZ","phoneCode":"+268"},{"name":"Ethiopia","code":"ET","phoneCode":"+251"},{"name":"Falkland Islands","code":"FK","phoneCode":"+500"},{"name":"Faroe Islands","code":"FO","phoneCode":"+298"},{"name":"Fiji","code":"FJ","phoneCode":"+679"},{"name":"Finland","code":"FI","phoneCode":"+358"},{"name":"France","code":"FR","phoneCode":"+33"},{"name":"French Guiana","code":"GF","phoneCode":"+594"},{"name":"French Polynesia","code":"PF","phoneCode":"+689"},{"name":"Gabon","code":"GA","phoneCode":"+241"},{"name":"Gambia","code":"GM","phoneCode":"+220"},{"name":"Georgia","code":"GE","phoneCode":"+995"},{"name":"Germany","code":"DE","phoneCode":"+49"},{"name":"Ghana","code":"GH","phoneCode":"+233"},{"name":"Gibraltar","code":"GI","phoneCode":"+350"},{"name":"Greece","code":"GR","phoneCode":"+30"},{"name":"Greenland","code":"GL","phoneCode":"+299"},{"name":"Grenada","code":"GD","phoneCode":"+1"},{"name":"Guadeloupe","code":"GP","phoneCode":"+590"},{"name":"Guam","code":"GU","phoneCode":"+1"},{"name":"Guatemala","code":"GT","phoneCode":"+502"},{"name":"Guernsey","code":"GG","phoneCode":"+44"},{"name":"Guinea","code":"GN","phoneCode":"+224"},{"name":"Guinea-Bissau","code":"GW","phoneCode":"+245"},{"name":"Guyana","code":"GY","phoneCode":"+592"},{"name":"Haiti","code":"HT","phoneCode":"+509"},{"name":"Honduras","code":"HN","phoneCode":"+504"},{"name":"Hong Kong SAR China","code":"HK","phoneCode":"+852"},{"name":"Hungary","code":"HU","phoneCode":"+36"},{"name":"Iceland","code":"IS","phoneCode":"+354"},{"name":"India","code":"IN","phoneCode":"+91"},{"name":"Indonesia","code":"ID","phoneCode":"+62"},{"name":"Iran","code":"IR","phoneCode":"+98"},{"name":"Iraq","code":"IQ","phoneCode":"+964"},{"name":"Ireland","code":"IE","phoneCode":"+353"},{"name":"Isle of Man","code":"IM","phoneCode":"+44"},{"name":"Israel","code":"IL","phoneCode":"+972"},{"name":"Italy","code":"IT","phoneCode":"+39"},{"name":"Jamaica","code":"JM","phoneCode":"+1"},{"name":"Japan","code":"JP","phoneCode":"+81"},{"name":"Jersey","code":"JE","phoneCode":"+44"},{"name":"Jordan","code":"JO","phoneCode":"+962"},{"name":"Kazakhstan","code":"KZ","phoneCode":"+7"},{"name":"Kenya","code":"KE","phoneCode":"+254"},{"name":"Kiribati","code":"KI","phoneCode":"+686"},{"name":"Kosovo","code":"XK","phoneCode":"+383"},{"name":"Kuwait","code":"KW","phoneCode":"+965"},{"name":"Kyrgyzstan","code":"KG","phoneCode":"+996"},{"name":"Laos","code":"LA","phoneCode":"+856"},{"name":"Latvia","code":"LV","phoneCode":"+371"},{"name":"Lebanon","code":"LB","phoneCode":"+961"},{"name":"Lesotho","code":"LS","phoneCode":"+266"},{"name":"Liberia","code":"LR","phoneCode":"+231"},{"name":"Libya","code":"LY","phoneCode":"+218"},{"name":"Liechtenstein","code":"LI","phoneCode":"+423"},{"name":"Lithuania","code":"LT","phoneCode":"+370"},{"name":"Luxembourg","code":"LU","phoneCode":"+352"},{"name":"Macao SAR China","code":"MO","phoneCode":"+853"},{"name":"Madagascar","code":"MG","phoneCode":"+261"},{"name":"Malawi","code":"MW","phoneCode":"+265"},{"name":"Malaysia","code":"MY","phoneCode":"+60"},{"name":"Maldives","code":"MV","phoneCode":"+960"},{"name":"Mali","code":"ML","phoneCode":"+223"},{"name":"Malta","code":"MT","phoneCode":"+356"},{"name":"Marshall Islands","code":"MH","phoneCode":"+692"},{"name":"Martinique","code":"MQ","phoneCode":"+596"},{"name":"Mauritania","code":"MR","phoneCode":"+222"},{"name":"Mauritius","code":"MU","phoneCode":"+230"},{"name":"Mayotte","code":"YT","phoneCode":"+262"},{"name":"Mexico","code":"MX","phoneCode":"+52"},{"name":"Micronesia","code":"FM","phoneCode":"+691"},{"name":"Moldova","code":"MD","phoneCode":"+373"},{"name":"Monaco","code":"MC","phoneCode":"+377"},{"name":"Mongolia","code":"MN","phoneCode":"+976"},{"name":"Montenegro","code":"ME","phoneCode":"+382"},{"name":"Montserrat","code":"MS","phoneCode":"+1"},{"name":"Morocco","code":"MA","phoneCode":"+212"},{"name":"Mozambique","code":"MZ","phoneCode":"+258"},{"name":"Myanmar (Burma)","code":"MM","phoneCode":"+95"},{"name":"Namibia","code":"NA","phoneCode":"+264"},{"name":"Nauru","code":"NR","phoneCode":"+674"},{"name":"Nepal","code":"NP","phoneCode":"+977"},{"name":"Netherlands","code":"NL","phoneCode":"+31"},{"name":"New Caledonia","code":"NC","phoneCode":"+687"},{"name":"New Zealand","code":"NZ","phoneCode":"+64"},{"name":"Nicaragua","code":"NI","phoneCode":"+505"},{"name":"Niger","code":"NE","phoneCode":"+227"},{"name":"Nigeria","code":"NG","phoneCode":"+234"},{"name":"Niue","code":"NU","phoneCode":"+683"},{"name":"Norfolk Island","code":"NF","phoneCode":"+672"},{"name":"Northern Mariana Islands","code":"MP","phoneCode":"+1"},{"name":"North Korea","code":"KP","phoneCode":"+850"},{"name":"North Macedonia","code":"MK","phoneCode":"+389"},{"name":"Norway","code":"NO","phoneCode":"+47"},{"name":"Oman","code":"OM","phoneCode":"+968"},{"name":"Pakistan","code":"PK","phoneCode":"+92"},{"name":"Palau","code":"PW","phoneCode":"+680"},{"name":"Palestinian Territories","code":"PS","phoneCode":"+970"},{"name":"Panama","code":"PA","phoneCode":"+507"},{"name":"Papua New Guinea","code":"PG","phoneCode":"+675"},{"name":"Paraguay","code":"PY","phoneCode":"+595"},{"name":"Peru","code":"PE","phoneCode":"+51"},{"name":"Philippines","code":"PH","phoneCode":"+63"},{"name":"Poland","code":"PL","phoneCode":"+48"},{"name":"Portugal","code":"PT","phoneCode":"+351"},{"name":"Puerto Rico","code":"PR","phoneCode":"+1"},{"name":"Qatar","code":"QA","phoneCode":"+974"},{"name":"Réunion","code":"RE","phoneCode":"+262"},{"name":"Romania","code":"RO","phoneCode":"+40"},{"name":"Russia","code":"RU","phoneCode":"+7"},{"name":"Rwanda","code":"RW","phoneCode":"+250"},{"name":"Samoa","code":"WS","phoneCode":"+685"},{"name":"San Marino","code":"SM","phoneCode":"+378"},{"name":"São Tomé & Príncipe","code":"ST","phoneCode":"+239"},{"name":"Saudi Arabia","code":"SA","phoneCode":"+966"},{"name":"Senegal","code":"SN","phoneCode":"+221"},{"name":"Serbia","code":"RS","phoneCode":"+381"},{"name":"Seychelles","code":"SC","phoneCode":"+248"},{"name":"Sierra Leone","code":"SL","phoneCode":"+232"},{"name":"Singapore","code":"SG","phoneCode":"+65"},{"name":"Sint Maarten","code":"SX","phoneCode":"+1"},{"name":"Slovakia","code":"SK","phoneCode":"+421"},{"name":"Slovenia","code":"SI","phoneCode":"+386"},{"name":"Solomon Islands","code":"SB","phoneCode":"+677"},{"name":"Somalia","code":"SO","phoneCode":"+252"},{"name":"South Africa","code":"ZA","phoneCode":"+27"},{"name":"South Korea","code":"KR","phoneCode":"+82"},{"name":"South Sudan","code":"SS","phoneCode":"+211"},{"name":"Spain","code":"ES","phoneCode":"+34"},{"name":"Sri Lanka","code":"LK","phoneCode":"+94"},{"name":"St. Barthélemy","code":"BL","phoneCode":"+590"},{"name":"St. Helena","code":"SH","phoneCode":"+290"},{"name":"St. Kitts & Nevis","code":"KN","phoneCode":"+1"},{"name":"St. Lucia","code":"LC","phoneCode":"+1"},{"name":"St. Martin","code":"MF","phoneCode":"+590"},{"name":"St. Pierre & Miquelon","code":"PM","phoneCode":"+508"},{"name":"St. Vincent & Grenadines","code":"VC","phoneCode":"+1"},{"name":"Sudan","code":"SD","phoneCode":"+249"},{"name":"Suriname","code":"SR","phoneCode":"+597"},{"name":"Svalbard & Jan Mayen","code":"SJ","phoneCode":"+47"},{"name":"Sweden","code":"SE","phoneCode":"+46"},{"name":"Switzerland","code":"CH","phoneCode":"+41"},{"name":"Syria","code":"SY","phoneCode":"+963"},{"name":"Taiwan","code":"TW","phoneCode":"+886"},{"name":"Tajikistan","code":"TJ","phoneCode":"+992"},{"name":"Tanzania","code":"TZ","phoneCode":"+255"},{"name":"Thailand","code":"TH","phoneCode":"+66"},{"name":"Timor-Leste","code":"TL","phoneCode":"+670"},{"name":"Togo","code":"TG","phoneCode":"+228"},{"name":"Tokelau","code":"TK","phoneCode":"+690"},{"name":"Tonga","code":"TO","phoneCode":"+676"},{"name":"Trinidad & Tobago","code":"TT","phoneCode":"+1"},{"name":"Tristan da Cunha","code":"TA","phoneCode":"+290"},{"name":"Tunisia","code":"TN","phoneCode":"+216"},{"name":"Türkiye","code":"TR","phoneCode":"+90"},{"name":"Turkmenistan","code":"TM","phoneCode":"+993"},{"name":"Turks & Caicos Islands","code":"TC","phoneCode":"+1"},{"name":"Tuvalu","code":"TV","phoneCode":"+688"},{"name":"U.S. Virgin Islands","code":"VI","phoneCode":"+1"},{"name":"Uganda","code":"UG","phoneCode":"+256"},{"name":"Ukraine","code":"UA","phoneCode":"+380"},{"name":"United Arab Emirates","code":"AE","phoneCode":"+971"},{"name":"United Kingdom","code":"GB","phoneCode":"+44"},{"name":"United States","code":"US","phoneCode":"+1"},{"name":"Uruguay","code":"UY","phoneCode":"+598"},{"name":"Uzbekistan","code":"UZ","phoneCode":"+998"},{"name":"Vanuatu","code":"VU","phoneCode":"+678"},{"name":"Vatican City","code":"VA","phoneCode":"+39"},{"name":"Venezuela","code":"VE","phoneCode":"+58"},{"name":"Vietnam","code":"VN","phoneCode":"+84"},{"name":"Wallis & Futuna","code":"WF","phoneCode":"+681"},{"name":"Western Sahara","code":"EH","phoneCode":"+212"},{"name":"Yemen","code":"YE","phoneCode":"+967"},{"name":"Zambia","code":"ZM","phoneCode":"+260"},{"name":"Zimbabwe","code":"ZW","phoneCode":"+263"}]},"showTitle":false,"captchaEnabled":false,"buttonVariant":"","objectName":"page-55acf948e4b0f1200fceacf6","formFields":[{"type":"name","id":"name-yui_3_17_2_1_1412689407551_57197","locked":false,"title":"Name","description":"","required":true,"name":true},{"type":"email","id":"email-yui_3_17_2_1_1412689407551_57524","locked":false,"title":"Email Address","description":"","placeholder":"","required":true,"email":true},{"type":"text","id":"text-yui_3_17_2_1_1412689407551_57934","locked":false,"title":"Phone","description":"","placeholder":"","required":false,"text":true},{"type":"textarea","id":"textarea-yui_3_17_2_1_1412689407551_58344","locked":false,"title":"Message","description":"","placeholder":"","required":true,"textarea":true}],"lightboxHandleText":"","localizedStrings":{"validation":{"noValidSelection":"A valid selection must be made.","invalidUrl":"Must be a valid URL.","stringTooLong":"Value should have a length no longer than {0}.","containsInvalidKey":"{0} contains an invalid key.","invalidTwitterUsername":"Must be a valid Twitter username.","valueOutsideRange":"Value must be in the range {0} to {1}.","invalidPassword":"Passwords should not contain whitespace.","missingRequiredSubfields":"{0} is missing required subfields: {1}","invalidCurrency":"Currency value should be formatted like 1234 or 123.99.","invalidMapSize":"Value should contain exactly {0} elements.","subfieldsRequired":"All fields in {0} are required.","formSubmissionFailed":"Form submission failed. Review the following information: {0}.","invalidCountryCode":"Country code should have an optional plus and up to 4 digits.","invalidDate":"This is not a real date.","required":"{0} is required.","invalidStringLength":"Value should be {0} characters long.","invalidEmail":"Email addresses should follow the format user@domain.com.","invalidListLength":"Value should be {0} elements long.","allEmpty":"Please fill out at least one form field.","missingRequiredQuestion":"Missing a required question.","invalidQuestion":"Contained an invalid question.","captchaFailure":"Captcha validation failed. Please try again.","stringTooShort":"Value should have a length of at least {0}.","invalid":"{0} is not valid.","formErrors":"Form Errors","containsInvalidValue":"{0} contains an invalid value.","invalidUnsignedNumber":"Numbers must contain only digits and no other characters.","invalidName":"Valid names contain only letters, numbers, spaces, ', or - characters."},"submit":"Submit","status":{"title":"{@} Block","learnMore":"Learn more"},"name":{"firstName":"First Name","lastName":"Last Name"},"lightbox":{"openForm":"Open Form"},"likert":{"agree":"Agree","stronglyDisagree":"Strongly Disagree","disagree":"Disagree","stronglyAgree":"Strongly Agree","neutral":"Neutral"},"time":{"am":"AM","second":"Second","pm":"PM","minute":"Minute","amPm":"AM/PM","hour":"Hour"},"notFound":"Form not found.","date":{"yyyy":"YYYY","year":"Year","mm":"MM","day":"Day","month":"Month","dd":"DD"},"phone":{"country":"Country","number":"Number","prefix":"Prefix","areaCode":"Area Code","line":"Line"},"submitError":"Unable to submit form. Please try again later.","address":{"stateProvince":"State/Province","country":"Country","zipPostalCode":"Zip/Postal Code","address2":"Address 2","address1":"Address 1","city":"City"},"email":{"signUp":"Sign up for news and updates"},"cannotSubmitDemoForm":"This is a demo form and cannot be submitted.","required":"(required)","invalidData":"Invalid form data."}}</script>
+  <div id="form-submission-html-55acf948e4b0f1200fceacf8" class="sqs-form-block-submission-html" data-submission-html=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="form-wrapper"
+  
+>
+  
+  <div class="form-inner-wrapper"  hidden>
+    <form
+       data-form-id="55acf948e4b0f1200fceacf8"
+       data-success-redirect=""
+       data-dynamic-strings
+       autocomplete="on"
+       
+       method="POST"
+       action="https://nell-watson-ck9c.squarespace.com"
+       novalidate
+       onsubmit="return (function (form) {
+  Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
+    (new Y.Squarespace.FormSubmit(form)).submit({
+      formId: '55acf948e4b0f1200fceacf8',
+      collectionId: '',
+      objectName: 'page-55acf948e4b0f1200fceacf6'
+    });
+  });
+  return false;
+})(this);"
+       
+    >
+      
+        <div class="field-list clear">
+
+        
+
+          
+
+          
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <fieldset id="name-yui_3_17_2_1_1412689407551_57197" class="form-item fields name required">
+                
+            <legend class="title">
+              Name
+              
+                <span class="required" aria-hidden="true">*</span>
+              
+            </legend>
+          
+                
+                <div class="field first-name">
+                  <label class="caption">
+                    <input
+                        class="field-element field-control"
+                        name="fname"
+                        x-autocompletetype="given-name"
+                        type="text"
+                        spellcheck="false"
+                        maxlength="30"
+                        data-title="First"
+                        aria-required="true"
+                    />
+                    <span class="caption-text">First Name</span>
+                  </label>
+                </div>
+                <div class="field last-name">
+                  <label class="caption">
+                    <input
+                        class="field-element field-control"
+                        name="lname"
+                        x-autocompletetype="surname"
+                        type="text"
+                        spellcheck="false"
+                        maxlength="30"
+                        data-title="Last"
+                        aria-required="true"
+                    />
+                    <span class="caption-text">Last Name</span>
+                  </label>
+                </div>
+              </fieldset>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+          
+
+          
+
+            
+
+            
+
+            
+
+            
+
+            
+              <div id="email-yui_3_17_2_1_1412689407551_57524" class="form-item field email required">
+                
+            <label class="title" for="email-yui_3_17_2_1_1412689407551_57524-field">
+              Email Address
+              
+                <span class="required" aria-hidden="true">*</span>
+              
+            </label>
+          
+                
+                <input
+                    class="field-element"
+                    id="email-yui_3_17_2_1_1412689407551_57524-field"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    spellcheck="false"
+                    
+                    aria-required="true"
+                />
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+          
+
+          
+
+            
+
+            
+
+            
+              <div id="text-yui_3_17_2_1_1412689407551_57934" class="form-item field text">
+                
+            <label class="title" for="text-yui_3_17_2_1_1412689407551_57934-field">
+              Phone
+              
+            </label>
+          
+                
+                <input
+                    class="field-element text"
+                    type="text"
+                    id="text-yui_3_17_2_1_1412689407551_57934-field"
+                    
+                    
+                />
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+          
+
+          
+
+            
+
+            
+
+            
+
+            
+              <div id="textarea-yui_3_17_2_1_1412689407551_58344" class="form-item field textarea required">
+                
+            <label class="title" for="textarea-yui_3_17_2_1_1412689407551_58344-field">
+              Message
+              
+                <span class="required" aria-hidden="true">*</span>
+              
+            </label>
+          
+                
+                <textarea
+                    class="field-element "
+                    id="textarea-yui_3_17_2_1_1412689407551_58344-field"
+                    
+                    aria-required="true"
+                ></textarea>
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+        </div>
+
+      
+
+      
+
+      
+      <div data-animation-role="button"
+        class="
+          form-button-wrapper
+          
+            form-button-wrapper--align-left
+          
+        "
+      >
+        <input
+          class="button sqs-system-button sqs-editable-button sqs-button-element--primary"
+          type="submit"
+          value="Submit Enquiry"
+          data-sqsp-button
+        />
+      </div>
+      
+
+      
+      <div class="hidden form-submission-text">Thank you!</div>
+      <div class="hidden form-submission-html" data-submission-html=""></div>
+    </form>
+  </div>
+</div>]]></content:encoded>
+      <wp:post_name>contact</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>1</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/intro</link>
+      <title>#</title>
+      <pubDate>Thu, 29 Aug 2024 19:48:11 +0000</pubDate>
+      <content:encoded><![CDATA[<div class="sqs-html-content">
+  <h1 style="text-align:center;white-space:pre-wrap;">Bounder tracks drones at your event to enforce&nbsp;no-fly zones.</h1><h2 style="text-align:center;white-space:pre-wrap;"><strong>Drones are&nbsp;a fantastic tool when used responsibly.</strong>&nbsp;</h2><p style="text-align:center;white-space:pre-wrap;" class="">Unfortunately, accidents with drones are increasingly common, causing&nbsp;<a href="http://www.tmz.com/2015/05/31/enrique-iglesias-drone-accident-blood-hand-concert-tijuana/" target="_blank">personal injury</a>, <a href="http://www.bbc.com/news/technology-33612631" target="_blank">threats to public safety</a>, even&nbsp;<a href="http://www.geekwire.com/2015/seattle-city-light-spends-35k-to-remove-drone-stuck-on-power-line-for-one-week/" target="_blank">power line disruptions</a>.</p><p style="text-align:center;white-space:pre-wrap;" class="">Bounder is your first defense against such liabilities.</p><p style="text-align:center;white-space:pre-wrap;" class="">&nbsp;</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<div class="sqs-html-content">
+  <h2 style="text-align:center;white-space:pre-wrap;">The Hardware</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+      <img src="https://images.squarespace-cdn.com/content/v1/55acf641e4b0b8a3dbbdbd91/1437409515320-6PVZYVPDJ7T6MDTPUXGY/image-asset.png?format=original" alt=""/>
+  
+
+
+
+<div class="sqs-html-content">
+  <p class="" style="white-space:pre-wrap;">&nbsp;</p><h2 style="text-align:center;white-space:pre-wrap;">The Software</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+      <img src="https://images.squarespace-cdn.com/content/v1/55acf641e4b0b8a3dbbdbd91/1437409539849-7AYBB04OK2VJY0MQ26W1/image-asset.png?format=original" alt=""/>
+  
+
+<div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper " style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-provider-name="YouTube" data-html="&lt;iframe src=&quot;//www.youtube.com/embed/Wjeewz-p14Q?wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;"></div></div></div>
+
+<div class="sqs-html-content">
+  <h1 style="text-align:center;white-space:pre-wrap;">Never be at the mercy of rogue drones again!</h1><h2 style="text-align:center;white-space:pre-wrap;">Bounder technology has now been released free and open source (MIT License)!</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<div
+  class="sqs-block-button-container sqs-block-button-container--center"
+  data-animation-role="button"
+  data-alignment="center"
+  data-button-size="large"
+  data-button-type="secondary"
+>
+  <a
+    href="https://api.bounder.io/"
+    class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element"
+    data-sqsp-button
+    target="_blank"
+  >
+    API
+  </a>
+</div>
+
+
+<div
+  class="sqs-block-button-container sqs-block-button-container--center"
+  data-animation-role="button"
+  data-alignment="center"
+  data-button-size="large"
+  data-button-type="secondary"
+>
+  <a
+    href="https://github.com/NellWatson/Bounder"
+    class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element"
+    data-sqsp-button
+    target="_blank"
+  >
+    GitHub
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<div class="newsletter-form-wrapper
+  
+  newsletter-form-wrapper--layoutFloat
+  newsletter-form-wrapper--alignCenter
+  
+  "
+  >
+  <form
+     class="newsletter-form"
+     data-form-id="55ad1306e4b073c6b3037274"
+     
+     autocomplete="on"
+     method="POST"
+     novalidate
+     onsubmit="return (function (form) {
+    Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
+      (new Y.Squarespace.FormSubmit(form)).submit({
+        formId: '55ad1306e4b073c6b3037274',
+        collectionId: '',
+        objectName: 'page-55acf90ee4b0800256d08452'
+      });
+    });
+    return false;
+  })(this);">
+    <header class="newsletter-form-header">
+      <h2 class="newsletter-form-header-title">Stay Informed</h2>
+      <div class="newsletter-form-header-description"><p>Sign up with your email address to receive important&nbsp;updates.</p></div>
+    </header>
+    <div class="newsletter-form-body">
+      <div class="newsletter-form-fields-wrapper form-fields" style="vertical-align: middle;">
+        
+        
+          
+            <div id="email-yui_3_17_2_67_1437398614550_7628" class="newsletter-form-field-wrapper form-item field email required" style="vertical-align: bottom;">
+              <label class="newsletter-form-field-label title" for="email-yui_3_17_2_67_1437398614550_7628-field">Email Address</label>
+              <input id="email-yui_3_17_2_67_1437398614550_7628-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" autocomplete="email" type="email" spellcheck="false" placeholder="Email Address" />
+            </div>
+          
+        
+          
+        
+      </div>
+      <div data-animation-role="button" class="newsletter-form-button-wrapper submit-wrapper" style="vertical-align: middle;">
+        <button
+          class="
+            newsletter-form-button
+            sqs-system-button
+            sqs-editable-button-layout
+            sqs-editable-button-style
+            sqs-editable-button-shape
+            sqs-button-element--primary
+          "
+          type="submit"
+          value="Sign Up"
+        >
+          <span class="newsletter-form-spinner sqs-spin light large"></span>
+          <span class="newsletter-form-button-label">Sign Up</span>
+          <span class="newsletter-form-button-icon"></span>
+        </button>
+      </div>
+      
+        
+        <div class="captcha-container sqs-form-rendered
+          
+          
+          
+          "
+          data-theme=""
+        ></div>
+        
+      
+    </div>
+    <div class="newsletter-form-footnote"><p>We respect your privacy, and your time.</p></div>
+    <div class="hidden form-submission-text">Thank you!</div>
+    <div class="hidden form-submission-html" data-submission-html=""></div>
+  </form>
+</div>]]></content:encoded>
+      <wp:post_name>intro</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>2</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/privacy</link>
+      <title>Privacy &amp; Cookies</title>
+      <pubDate>Mon, 20 Jul 2015 14:34:54 +0000</pubDate>
+      <content:encoded><![CDATA[<div class="sqs-html-content">
+  <h1 class="text-align-center">BOUNDER WEBSITE PRIVACY POLICY</h1><p style="text-align:justify">This Privacy Policy was last modified on December 20th, 2014.</p><p style="text-align:justify">Bounder ("us", "we", or "our") operates www.bounder.io (the "Site"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.</p><p style="text-align:justify">We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at www.bounder.io</p><p style="text-align:justify"><strong>Information Collection And Use</strong><br />While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, email address, postal address and phone number ("Personal Information").</p><p style="text-align:justify"><strong>Log Data</strong><br />Like many site operators, we collect information that your browser sends whenever you visit our Site ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages and other statistics.</p><p style="text-align:justify"><strong>Cookies</strong><br />Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer's hard drive.</p><p style="text-align:justify">Like many sites, we use "cookies" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.</p><p style="text-align:justify"><strong>Security</strong><br />The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p><p style="text-align:justify"><strong>Links To Other Sites</strong><br />Our Site may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p><p style="text-align:justify">Bounder has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services.</p><p style="text-align:justify"><strong>Changes To This Privacy Policy</strong><br />Bounder may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on the Site. You are advised to review this Privacy Policy periodically for any changes.</p><p style="text-align:justify"><strong>Contact Us</strong><br />If you have any questions about this Privacy Policy, please contact us.</p><p style="text-align:justify">With permission from&nbsp;<a href="http://termsfeed.com/privacy-policy/generator/">TermsFeed</a></p>
+</div>]]></content:encoded>
+      <wp:post_name>privacy</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>3</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/ride-to-live-shift</link>
+      <title>Ride to Live</title>
+      <pubDate>Mon, 12 May 2025 14:06:39 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>ride-to-live-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>4</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <title>Gallery</title>
+      <link>/gallery-shift</link>
+      <pubDate>Mon, 12 May 2025 14:06:39 +0000</pubDate>
+      <content:encoded><![CDATA[<div><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634134-TJSFONRLUN3X76F0WS42/5471868425_ccb0f494f7_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559136-8XFO056RHOL71MOJ5Q2L/5471875537_af67c1ae3e_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569502-OC7B6X0URP1P0BOO7PUW/5472763210_fde0c458e7_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559413-JSBTGXJNHSL9FDFWSVH9/5472462006_c56c510a4e_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551942-AIRF8MJX72JAU6R0XLCA/5471873265_eec607acdf_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569181-3DHQX2S9B5E706L0JVAM/5472465070_e0d894142f_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568749-EBG6TIX2J94JO2IF8M0G/5472462808_eacd351e11_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616209-8EE76JUDSUJZVATCMD4F/5471871619_db8f4f30a4_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559139-965Z94IVOKBUNAJ78X5S/5471874971_36e0bbe35c_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559297-9Z1GIVI7LODZ8R2MR1Q9/5472460840_8f82e2c874_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569178-FYZWA4YAC1OR8LJ4OUH5/5472464164_89d05a7585_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689624286-DYTVO3SI3OENFJZ8B28H/5471869561_5030a706fe_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689543151-KCTM94Q5HIAXVO9HKJAJ/5471871315_fc85217074_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568949-YTWQKGJZZZ10YWDTBNB9/5472463172_36c0e1039b_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689538960-D0IXOOPG9QCD6O1KVGNX/5471869031_767dfbf3bb_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616300-J56FG3ZLZGTUGCJITPH7/5471872287_3fa4d5b9e9_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689552060-XJNW6X8VB62M3FCLOK3K/5471873425_b79f29fc4e_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569489-X812371FMVOBSXNZRNDX/5472465380_08ff249208_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634169-1T74ILTBF2HZ0POLCEK4/5471868047_e9f6ce3d7b_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559501-KIGK916SYQZJ6NWPLUYT/5472462536_79320276cf_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551888-KB8Z5P65Z0QU7JX4L07P/5471872905_bd0cb33b6c_o.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559262-1JCO8PWH8KKALYNM4EKH/5472460964_970bdc9788_b.jpg" /><img src="http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568928-FNZKR9FO40ZP2BKI5LLJ/5472463522_e1ca281e06_o.jpg" /></div>]]></content:encoded>
+      <wp:post_name>gallery-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>5</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634134-TJSFONRLUN3X76F0WS42/5471868425_ccb0f494f7_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634134-TJSFONRLUN3X76F0WS42/5471868425_ccb0f494f7_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eb6</title>
+      <wp:post_name>5471868425-ccb0f494f7-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>6</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eb6]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eb6]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:47:14 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:47:14</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:47:14</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559136-8XFO056RHOL71MOJ5Q2L/5471875537_af67c1ae3e_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559136-8XFO056RHOL71MOJ5Q2L/5471875537_af67c1ae3e_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ed6</title>
+      <wp:post_name>5471875537-af67c1ae3e-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>7</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ed6]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ed6]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569502-OC7B6X0URP1P0BOO7PUW/5472763210_fde0c458e7_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569502-OC7B6X0URP1P0BOO7PUW/5472763210_fde0c458e7_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ebe</title>
+      <wp:post_name>5472763210-fde0c458e7-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>8</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ebe]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ebe]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:09 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:09</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:09</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559413-JSBTGXJNHSL9FDFWSVH9/5472462006_c56c510a4e_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559413-JSBTGXJNHSL9FDFWSVH9/5472462006_c56c510a4e_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ece</title>
+      <wp:post_name>5472462006-c56c510a4e-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>9</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ece]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ece]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551942-AIRF8MJX72JAU6R0XLCA/5471873265_eec607acdf_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551942-AIRF8MJX72JAU6R0XLCA/5471873265_eec607acdf_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eda</title>
+      <wp:post_name>5471873265-eec607acdf-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>10</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eda]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eda]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:51 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:51</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:51</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569181-3DHQX2S9B5E706L0JVAM/5472465070_e0d894142f_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569181-3DHQX2S9B5E706L0JVAM/5472465070_e0d894142f_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ec2</title>
+      <wp:post_name>5472465070-e0d894142f-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>11</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ec2]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ec2]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:09 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:09</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:09</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568749-EBG6TIX2J94JO2IF8M0G/5472462808_eacd351e11_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568749-EBG6TIX2J94JO2IF8M0G/5472462808_eacd351e11_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eca</title>
+      <wp:post_name>5472462808-eacd351e11-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>12</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eca]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eca]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:08 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:08</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:08</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616209-8EE76JUDSUJZVATCMD4F/5471871619_db8f4f30a4_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616209-8EE76JUDSUJZVATCMD4F/5471871619_db8f4f30a4_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ebc</title>
+      <wp:post_name>5471871619-db8f4f30a4-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>13</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ebc]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ebc]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:56 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:56</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:56</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559139-965Z94IVOKBUNAJ78X5S/5471874971_36e0bbe35c_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559139-965Z94IVOKBUNAJ78X5S/5471874971_36e0bbe35c_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ed4</title>
+      <wp:post_name>5471874971-36e0bbe35c-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>14</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ed4]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ed4]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559297-9Z1GIVI7LODZ8R2MR1Q9/5472460840_8f82e2c874_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559297-9Z1GIVI7LODZ8R2MR1Q9/5472460840_8f82e2c874_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ed0</title>
+      <wp:post_name>5472460840-8f82e2c874-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>15</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ed0]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ed0]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569178-FYZWA4YAC1OR8LJ4OUH5/5472464164_89d05a7585_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569178-FYZWA4YAC1OR8LJ4OUH5/5472464164_89d05a7585_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ec4</title>
+      <wp:post_name>5472464164-89d05a7585-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>16</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ec4]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ec4]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:09 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:09</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:09</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689624286-DYTVO3SI3OENFJZ8B28H/5471869561_5030a706fe_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689624286-DYTVO3SI3OENFJZ8B28H/5471869561_5030a706fe_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eb8</title>
+      <wp:post_name>5471869561-5030a706fe-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>17</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eb8]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eb8]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:47:04 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:47:04</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:47:04</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689543151-KCTM94Q5HIAXVO9HKJAJ/5471871315_fc85217074_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689543151-KCTM94Q5HIAXVO9HKJAJ/5471871315_fc85217074_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ede</title>
+      <wp:post_name>5471871315-fc85217074-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>18</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ede]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ede]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:43 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:43</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:43</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568949-YTWQKGJZZZ10YWDTBNB9/5472463172_36c0e1039b_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568949-YTWQKGJZZZ10YWDTBNB9/5472463172_36c0e1039b_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ec6</title>
+      <wp:post_name>5472463172-36c0e1039b-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>19</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ec6]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ec6]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:08 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:08</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:08</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689538960-D0IXOOPG9QCD6O1KVGNX/5471869031_767dfbf3bb_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689538960-D0IXOOPG9QCD6O1KVGNX/5471869031_767dfbf3bb_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ee0</title>
+      <wp:post_name>5471869031-767dfbf3bb-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>20</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ee0]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ee0]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:38 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:38</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:38</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616300-J56FG3ZLZGTUGCJITPH7/5471872287_3fa4d5b9e9_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689616300-J56FG3ZLZGTUGCJITPH7/5471872287_3fa4d5b9e9_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eba</title>
+      <wp:post_name>5471872287-3fa4d5b9e9-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>21</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eba]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eba]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:56 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:56</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:56</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689552060-XJNW6X8VB62M3FCLOK3K/5471873425_b79f29fc4e_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689552060-XJNW6X8VB62M3FCLOK3K/5471873425_b79f29fc4e_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ed8</title>
+      <wp:post_name>5471873425-b79f29fc4e-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>22</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ed8]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ed8]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:52 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:52</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:52</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569489-X812371FMVOBSXNZRNDX/5472465380_08ff249208_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689569489-X812371FMVOBSXNZRNDX/5472465380_08ff249208_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ec0</title>
+      <wp:post_name>5472465380-08ff249208-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>23</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ec0]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ec0]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:09 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:09</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:09</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634169-1T74ILTBF2HZ0POLCEK4/5471868047_e9f6ce3d7b_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689634169-1T74ILTBF2HZ0POLCEK4/5471868047_e9f6ce3d7b_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2eb4</title>
+      <wp:post_name>5471868047-e9f6ce3d7b-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>24</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2eb4]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2eb4]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:47:14 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:47:14</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:47:14</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559501-KIGK916SYQZJ6NWPLUYT/5472462536_79320276cf_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559501-KIGK916SYQZJ6NWPLUYT/5472462536_79320276cf_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ecc</title>
+      <wp:post_name>5472462536-79320276cf-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>25</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ecc]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ecc]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551888-KB8Z5P65Z0QU7JX4L07P/5471872905_bd0cb33b6c_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689551888-KB8Z5P65Z0QU7JX4L07P/5471872905_bd0cb33b6c_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2edc</title>
+      <wp:post_name>5471872905-bd0cb33b6c-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>26</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2edc]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2edc]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:51 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:51</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:51</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559262-1JCO8PWH8KKALYNM4EKH/5472460964_970bdc9788_b.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689559262-1JCO8PWH8KKALYNM4EKH/5472460964_970bdc9788_b.jpg</link>
+      <title>attachment-6822006fda20c558077b2ed2</title>
+      <wp:post_name>5472460964-970bdc9788-b-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>27</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ed2]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ed2]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:45:59 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:45:59</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:45:59</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568928-FNZKR9FO40ZP2BKI5LLJ/5472463522_e1ca281e06_o.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412689568928-FNZKR9FO40ZP2BKI5LLJ/5472463522_e1ca281e06_o.jpg</link>
+      <title>attachment-6822006fda20c558077b2ec8</title>
+      <wp:post_name>5472463522-e1ca281e06-o-jpg</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>28</wp:post_id>
+      <wp:post_parent>5</wp:post_parent>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ec8]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ec8]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 13:46:08 +0000</pubDate>
+      <wp:post_date>2014-10-07 13:46:08</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 13:46:08</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <link>/bio-shift</link>
+      <title>Bio</title>
+      <pubDate>Mon, 12 May 2025 14:06:39 +0000</pubDate>
+      <content:encoded><![CDATA[<div class="sqs-html-content">
+  <p>Bert has made a name for himself in backcountry snowboarding, traveling around the world exploring untouched terrain with the freshest pow. Flannel readymade fixie Pitchfork, occupy cred jean shorts food truck. XOXO sartorial hoodie, readymade cardigan Shoreditch butcher Vice sriracha. Schlitz hella photo booth pour-over kale chips. Sartorial pug Marfa messenger bag. Banh mi tousled try-hard, organic single-origin coffee lomo Terry Richardson mixtape chia VHS. Paleo twee distillery next level brunch Cosby sweater. Wes Anderson Pitchfork bitters, messenger bag Godard keytar typewriter stumptown jean shorts art party Cosby sweater Etsy readymade plaid street art.</p><p>Portland fingerstache Wes Anderson fashion axe organic. Organic chia artisan, biodiesel slow-carb Cosby sweater fap Schlitz Marfa cliche skateboard literally fashion axe +1 photo booth. Ennui authentic Thundercats, cliche 90's typewriter photo booth tote bag Marfa paleo pop-up mixtape. Occupy keffiyeh trust fund ethical High Life. Mumblecore polaroid cliche High Life, pickled hashtag meh. Butcher Echo Park skateboard, plaid fap gluten-free YOLO Blue Bottle you probably haven't heard of them. Bushwick next level locavore, letterpress pop-up iPhone Neutra vinyl cred bicycle rights Truffaut fap tote bag selvage.</p><p>Photography courtesy of <a target="_blank" href="http://rhyslogan.com/">Rhys Logan</a>.</p>
+</div>]]></content:encoded>
+      <wp:post_name>bio-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>29</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <title>The Summit</title>
+      <link>/journal-shift/2014/10/7/the-summit-ywtan</link>
+      <content:encoded><![CDATA[<img src="https://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412692548955-BIXOQFUW9VYTGV5VSD4C/image-asset.jpeg?format=original" alt=""/>
+  
+
+
+
+<div class="sqs-html-content">
+  <p>Austin actually mumblecore tofu Odd Future sriracha. Neutra High Life beard typewriter fingerstache authentic. DIY stumptown Marfa, gluten-free next level Etsy authentic put a bird on it Cosby sweater 8-bit freegan salvia. Brooklyn disrupt Cosby sweater, actually vinyl Blue Bottle raw denim Shoreditch plaid literally irony. Wes Anderson locavore ethnic, gluten-free Pinterest raw denim asymmetrical fashion axe hella polaroid YOLO freegan typewriter keytar. Authentic tofu Terry Richardson pour-over, raw denim keytar retro Helvetica irony. Cornhole PBR&amp;B DIY, craft beer chambray occupy synth.</p><p>Artisan banh mi semiotics, McSweeney's hashtag Intelligentsia leggings fap locavore seitan. Bicycle rights twee Thundercats put a bird on it, pop-up hashtag semiotics locavore trust fund craft beer meh gentrify next level Intelligentsia Shoreditch. Mlkshk mixtape Carles sartorial keytar. Fingerstache lo-fi Godard freegan. Wolf asymmetrical Carles, scenester pickled Truffaut PBR&amp;B butcher DIY typewriter deep v gentrify pork belly. Banksy church-key Terry Richardson, mlkshk flannel Thundercats chillwave mixtape cornhole Truffaut chia American Apparel selvage. Ennui fixie keytar, actually plaid lo-fi mlkshk next level occupy Etsy.</p><p>Put a bird on it Schlitz brunch distillery chillwave. Scenester ugh cray plaid try-hard keffiyeh, artisan Blue Bottle vegan. PBR photo booth Brooklyn post-ironic, you probably haven't heard of them forage quinoa mustache. Mlkshk bespoke bicycle rights Terry Richardson, meggings vegan meh sartorial direct trade keytar Thundercats. +1 YOLO ugh, umami McSweeney's shabby chic mlkshk 3 wolf moon. Austin deep v stumptown selfies Odd Future. Flexitarian drinking vinegar hella trust fund, shabby chic American Apparel vinyl ethnic squid hashtag fanny pack kitsch retro Helvetica cliche.</p>
+</div>]]></content:encoded>
+      <excerpt:encoded />
+      <wp:post_name>2014/10/7/the-summit-ywtan</wp:post_name>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_id>30</wp:post_id>
+      <wp:status>publish</wp:status>
+      <pubDate>Tue, 07 Oct 2014 16:01:00 +0000</pubDate>
+      <wp:post_date>2014-10-07 16:01:00</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 16:01:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:postmeta>
+        <wp:meta_key>_thumbnail_id</wp:meta_key>
+        <wp:meta_value><![CDATA[31]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698013775-IGKECCILHU3QR0CFGLD5/image-asset.jpeg/img.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698013775-IGKECCILHU3QR0CFGLD5/image-asset.jpeg/img.jpg</link>
+      <title>attachment-6822006fda20c558077b2ef6</title>
+      <wp:post_name>6822006fda20c558077b2ef6</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>31</wp:post_id>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2ef6]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2ef6]]></excerpt:encoded>
+      <pubDate>Tue, 07 Oct 2014 16:01:00 +0000</pubDate>
+      <wp:post_date>2014-10-07 16:01:00</wp:post_date>
+      <wp:post_date_gmt>2014-10-07 16:01:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <title>Other Worldly</title>
+      <link>/journal-shift/2014/8/14/other-worldly-z8azr</link>
+      <content:encoded><![CDATA[<img src="https://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412696768302-CLQ1RRYS3T4JE7QFDE1T/image-asset.jpeg?format=original" alt=""/>
+  
+
+
+
+<div class="sqs-html-content">
+  <p>Flannel readymade fixie Pitchfork, occupy cred jean shorts food truck. XOXO sartorial hoodie, readymade cardigan Shoreditch butcher Vice sriracha. Schlitz hella photo booth pour-over kale chips. Sartorial pug Marfa messenger bag. Banh mi tousled try-hard, organic single-origin coffee lomo Terry Richardson mixtape chia VHS. Paleo twee distillery next level brunch Cosby sweater. Wes Anderson Pitchfork bitters, messenger bag Godard keytar typewriter stumptown jean shorts art party Cosby sweater Etsy readymade plaid street art.</p><p>Portland fingerstache Wes Anderson fashion axe organic. Organic chia artisan, biodiesel slow-carb Cosby sweater fap Schlitz Marfa cliche skateboard literally fashion axe +1 photo booth. Ennui authentic Thundercats, cliche 90's typewriter photo booth tote bag Marfa paleo pop-up mixtape. Occupy keffiyeh trust fund ethical High Life. Mumblecore polaroid cliche High Life, pickled hashtag meh. Butcher Echo Park skateboard, plaid fap gluten-free YOLO Blue Bottle you probably haven't heard of them. Bushwick next level locavore, letterpress pop-up iPhone Neutra vinyl cred bicycle rights Truffaut fap tote bag selvage.</p><p>Austin actually mumblecore tofu Odd Future sriracha. Neutra High Life beard typewriter fingerstache authentic. DIY stumptown Marfa, gluten-free next level Etsy authentic put a bird on it Cosby sweater 8-bit freegan salvia. Brooklyn disrupt Cosby sweater, actually vinyl Blue Bottle raw denim Shoreditch plaid literally irony. Wes Anderson locavore ethnic, gluten-free Pinterest raw denim asymmetrical fashion axe hella polaroid YOLO freegan typewriter keytar. Authentic tofu Terry Richardson pour-over, raw denim keytar retro Helvetica irony. Cornhole PBR&amp;B DIY, craft beer chambray occupy synth.</p>
+</div>]]></content:encoded>
+      <excerpt:encoded />
+      <wp:post_name>2014/8/14/other-worldly-z8azr</wp:post_name>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_id>32</wp:post_id>
+      <wp:status>publish</wp:status>
+      <pubDate>Thu, 14 Aug 2014 15:46:00 +0000</pubDate>
+      <wp:post_date>2014-08-14 15:46:00</wp:post_date>
+      <wp:post_date_gmt>2014-08-14 15:46:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:postmeta>
+        <wp:meta_key>_thumbnail_id</wp:meta_key>
+        <wp:meta_value><![CDATA[33]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698094218-GE0DEGJ9TPULQTBVF0U2/image-asset.jpeg/img.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698094218-GE0DEGJ9TPULQTBVF0U2/image-asset.jpeg/img.jpg</link>
+      <title>attachment-68220070da20c558077b2f00</title>
+      <wp:post_name>68220070da20c558077b2f00</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>33</wp:post_id>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-68220070da20c558077b2f00]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-68220070da20c558077b2f00]]></excerpt:encoded>
+      <pubDate>Thu, 14 Aug 2014 15:46:00 +0000</pubDate>
+      <wp:post_date>2014-08-14 15:46:00</wp:post_date>
+      <wp:post_date_gmt>2014-08-14 15:46:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <title>Fun Grabs in the Backcountry</title>
+      <link>/journal-shift/2014/9/22/fun-grabs-in-the-backcountry-jjatz</link>
+      <content:encoded><![CDATA[<img src="https://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412696679204-T1LWBLFUOBOFWB2HM78A/image-asset.jpeg?format=original" alt=""/>
+  
+
+
+
+<div class="sqs-html-content">
+  <p>Flannel readymade fixie Pitchfork, occupy cred jean shorts food truck. XOXO sartorial hoodie, readymade cardigan Shoreditch butcher Vice sriracha. Schlitz hella photo booth pour-over kale chips. Sartorial pug Marfa messenger bag. Banh mi tousled try-hard, organic single-origin coffee lomo Terry Richardson mixtape chia VHS. Paleo twee distillery next level brunch Cosby sweater. Wes Anderson Pitchfork bitters, messenger bag Godard keytar typewriter stumptown jean shorts art party Cosby sweater Etsy readymade plaid street art.</p><p>Portland fingerstache Wes Anderson fashion axe organic. Organic chia artisan, biodiesel slow-carb Cosby sweater fap Schlitz Marfa cliche skateboard literally fashion axe +1 photo booth. Ennui authentic Thundercats, cliche 90's typewriter photo booth tote bag Marfa paleo pop-up mixtape. Occupy keffiyeh trust fund ethical High Life. Mumblecore polaroid cliche High Life, pickled hashtag meh. Butcher Echo Park skateboard, plaid fap gluten-free YOLO Blue Bottle you probably haven't heard of them. Bushwick next level locavore, letterpress pop-up iPhone Neutra vinyl cred bicycle rights Truffaut fap tote bag selvage.</p><p>Austin actually mumblecore tofu Odd Future sriracha. Neutra High Life beard typewriter fingerstache authentic. DIY stumptown Marfa, gluten-free next level Etsy authentic put a bird on it Cosby sweater 8-bit freegan salvia. Brooklyn disrupt Cosby sweater, actually vinyl Blue Bottle raw denim Shoreditch plaid literally irony. Wes Anderson locavore ethnic, gluten-free Pinterest raw denim asymmetrical fashion axe hella polaroid YOLO freegan typewriter keytar. Authentic tofu Terry Richardson pour-over, raw denim keytar retro Helvetica irony. Cornhole PBR&amp;B DIY, craft beer chambray occupy synth.</p>
+</div>]]></content:encoded>
+      <excerpt:encoded />
+      <wp:post_name>2014/9/22/fun-grabs-in-the-backcountry-jjatz</wp:post_name>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_id>34</wp:post_id>
+      <wp:status>publish</wp:status>
+      <pubDate>Mon, 22 Sep 2014 15:45:00 +0000</pubDate>
+      <wp:post_date>2014-09-22 15:45:00</wp:post_date>
+      <wp:post_date_gmt>2014-09-22 15:45:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:postmeta>
+        <wp:meta_key>_thumbnail_id</wp:meta_key>
+        <wp:meta_value><![CDATA[35]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <wp:attachment_url>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698060477-59QQ5I27EFX931BJ4I3N/image-asset.jpeg/img.jpg</wp:attachment_url>
+      <link>http://images.squarespace-cdn.com/content/v1/5433df32e4b037aa100d00f9/1412698060477-59QQ5I27EFX931BJ4I3N/image-asset.jpeg/img.jpg</link>
+      <title>attachment-6822006fda20c558077b2efb</title>
+      <wp:post_name>6822006fda20c558077b2efb</wp:post_name>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_id>35</wp:post_id>
+      <wp:status>inherit</wp:status>
+      <content:encoded><![CDATA[img-6822006fda20c558077b2efb]]></content:encoded>
+      <excerpt:encoded><![CDATA[exc-6822006fda20c558077b2efb]]></excerpt:encoded>
+      <pubDate>Mon, 22 Sep 2014 15:45:00 +0000</pubDate>
+      <wp:post_date>2014-09-22 15:45:00</wp:post_date>
+      <wp:post_date_gmt>2014-09-22 15:45:00</wp:post_date_gmt>
+      <dc:creator>eleanor.watson@singularityu.org</dc:creator>
+    </item>
+    <item>
+      <link>/end-shift</link>
+      <title>End</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>end-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>36</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/story-shift</link>
+      <title>Story</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>story-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>37</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/ride-shift</link>
+      <title>Ride</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>ride-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>38</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/hike-shift</link>
+      <title>Hike</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>hike-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>39</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/read-me-shift</link>
+      <title>Read Me</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded><![CDATA[<div class="sqs-html-content">
+  <h1>Parallax Scrolling</h1><p>Shift utilizes an effect known as "parallax scrolling" (different elements on the page scroll at different speeds) on the header images to present your content in a dynamic and interactive way.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sqs-html-content">
+  <h1>The Index Collection</h1><p>Build your presentation-style layout by adding pages to the Index Collection. The&nbsp;Thumbnail&nbsp;Image for each page will be its "header" image. The Thumbnail Image, Page Title, and Description are set in Page Settings.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <img src="https://images.squarespace-cdn.com/content/v1/515c7b5ae4b0875140c3d94a/1373494866621-8L8TJSL19SCJDJ7JYPHM/index-collection-read-me-1.jpg?format=original" alt=""/>
+  
+
+
+
+
+  
+      <img src="https://images.squarespace-cdn.com/content/v1/515c7b5ae4b0875140c3d94a/1373494887029-4AXRW743FMOYDJKF3T3M/index-collection-read-me-2.jpg?format=original" alt=""/>
+  
+
+
+
+<div class="sqs-html-content">
+  <h1>Other notable features</h1><p></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sqs-html-content">
+  <h3>Turn off parallax scrolling</h3><p><span style="font-size: 14px; font-weight: normal; line-height: 1.68em;">You can turn off the parallax scrolling effect if you just want a simple single-page layout.&nbsp;</span><br></p><p></p><h3>First Index Image Fullscreen</h3><p>You can choose to have the first image in the Index collection be fullscreen or match the height of the other images.&nbsp;</p><h3>Hide Page Title</h3><p><span>You can choose to hide the page/collection titles.&nbsp;</span></p><p></p><p></p><p></p><h3>Hide Parallax Nav</h3><p>You can hide the index nav.&nbsp;</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sqs-html-content">
+  <h3>Index Image Height</h3><p>You can set the height of all the index images to be full-screen, two-thirds or half.</p><h3>Title &amp; Description Position</h3><p>You can choose to place the Title &amp; Description on top of or under the main image.<br></p><p></p><h3>Footer Background Color</h3><p>Set the footer background color. The color of the text in the footer will be automatically set to white or black depending on the lightness of the color you chose to ensure it is legible.&nbsp;</p><p>&nbsp;</p>
+</div>]]></content:encoded>
+      <wp:post_name>read-me-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>40</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/live-to-ride-shift</link>
+      <title>Live to Ride</title>
+      <pubDate>Mon, 12 May 2025 14:06:40 +0000</pubDate>
+      <content:encoded />
+      <wp:post_name>live-to-ride-shift</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>41</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+  </channel>
+</rss>
+

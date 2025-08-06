@@ -1,0 +1,166 @@
+{
+  "results": [],
+  "styles": [
+    {
+      "selector": "body",
+      "match": true,
+      "live": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgb(23, 23, 23)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgb(23, 23, 23)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": "h1",
+      "match": true,
+      "live": {
+        "fontFamily": "futura-pt",
+        "fontSize": "36px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "futura-pt",
+        "fontSize": "36px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": "h2",
+      "match": true,
+      "live": {
+        "fontFamily": "futura-pt",
+        "fontSize": "24px",
+        "color": "rgb(22, 22, 29)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "24px 0px 12px"
+      },
+      "local": {
+        "fontFamily": "futura-pt",
+        "fontSize": "24px",
+        "color": "rgb(22, 22, 29)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "24px 0px 12px"
+      }
+    },
+    {
+      "selector": ".site-title",
+      "match": true,
+      "live": {
+        "fontFamily": "futura-pt",
+        "fontSize": "36px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "futura-pt",
+        "fontSize": "36px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": ".page-title",
+      "match": true,
+      "live": {
+        "fontFamily": "futura-pt",
+        "fontSize": "72px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "futura-pt",
+        "fontSize": "72px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": ".sqs-block-button-element",
+      "match": true,
+      "live": {
+        "fontFamily": "futura-pt",
+        "fontSize": "20px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(39, 39, 39)",
+        "padding": "25px 46px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "futura-pt",
+        "fontSize": "20px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(39, 39, 39)",
+        "padding": "25px 46px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": ".main-nav",
+      "match": true,
+      "live": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    {
+      "selector": "footer",
+      "match": true,
+      "live": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgb(23, 23, 23)",
+        "padding": "0px",
+        "margin": "0px"
+      },
+      "local": {
+        "fontFamily": "proxima-nova",
+        "fontSize": "15px",
+        "color": "rgb(54, 54, 54)",
+        "backgroundColor": "rgb(23, 23, 23)",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    }
+  ],
+  "timestamp": "2025-08-05T23:38:02.814Z"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Bounder",
+  "description": "Technology for making sure that drones stay only where they belong",
+  "pages": [
+    "404.html",
+    "contact.html",
+    "gallery-shift.html",
+    "index.html",
+    "intro.html",
+    "new-page.html",
+    "privacy.html",
+    "ride-to-live-shift.html",
+    "terms.html"
+  ],
+  "optimized": true,
+  "timestamp": "2025-08-05T23:18:10.648Z"
+}

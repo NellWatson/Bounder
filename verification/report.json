@@ -1,0 +1,62 @@
+[
+  {
+    "page": "Homepage",
+    "titleMatch": true,
+    "liveTitle": "Bounder",
+    "localTitle": "Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 848,
+    "localContentLength": 848,
+    "status": "✅ PASS"
+  },
+  {
+    "page": "Contact",
+    "titleMatch": true,
+    "liveTitle": "Contact — Bounder",
+    "localTitle": "Contact — Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 316,
+    "localContentLength": 316,
+    "status": "✅ PASS"
+  },
+  {
+    "page": "Privacy",
+    "titleMatch": true,
+    "liveTitle": "Privacy & Cookies — Bounder",
+    "localTitle": "Privacy & Cookies — Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 3090,
+    "localContentLength": 3090,
+    "status": "✅ PASS"
+  },
+  {
+    "page": "Terms",
+    "titleMatch": true,
+    "liveTitle": "Terms & Conditions — Bounder",
+    "localTitle": "Terms & Conditions — Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 2753,
+    "localContentLength": 2753,
+    "status": "✅ PASS"
+  },
+  {
+    "page": "Gallery",
+    "titleMatch": true,
+    "liveTitle": "Gallery — Bounder",
+    "localTitle": "Gallery — Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 201,
+    "localContentLength": 201,
+    "status": "✅ PASS"
+  },
+  {
+    "page": "Ride to Live",
+    "titleMatch": true,
+    "liveTitle": "Ride to Live — Bounder",
+    "localTitle": "Ride to Live — Bounder",
+    "contentSimilarity": "100.0%",
+    "liveContentLength": 218,
+    "localContentLength": 218,
+    "status": "✅ PASS"
+  }
+]

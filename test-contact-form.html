@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Bounder Contact Form</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .status {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 10px 10px 0;
+        }
+        .button:hover {
+            background: #ff4444;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .highlight {
+            background: #fffacd;
+            padding: 1px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="status success">
+        <h2>✅ Contact Form Successfully Configured!</h2>
+        <p>Your Formspree form ID <code>xqalyykn</code> has been added to all contact forms.</p>
+    </div>
+
+    <h1>🚀 Bounder Contact Form - Testing Guide</h1>
+
+    <div class="test-section">
+        <h2>📋 Configuration Status</h2>
+        <ul>
+            <li>✅ Form ID: <code>xqalyykn</code></li>
+            <li>✅ Endpoint: <code>https://formspree.io/f/xqalyykn</code></li>
+            <li>✅ Updated in all 6 clone directories</li>
+            <li>✅ Ready to receive submissions</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🧪 Test Your Form</h2>
+        <p>Choose a directory to test:</p>
+        
+        <a href="http://localhost:8080/contact.html" class="button">Test Local Form</a>
+        <a href="https://formspree.io/forms/xqalyykn/submissions" class="button" target="_blank">View Submissions Dashboard</a>
+        
+        <h3>Quick Test Steps:</h3>
+        <ol>
+            <li>Start a local server in any clone directory:
+                <pre><code>cd bounder_final_perfect
+python3 -m http.server 8080</code></pre>
+            </li>
+            <li>Open <a href="http://localhost:8080/contact.html">http://localhost:8080/contact.html</a></li>
+            <li>Fill out the form with test data:
+                <ul>
+                    <li>First Name: <span class="highlight">Test</span></li>
+                    <li>Last Name: <span class="highlight">User</span></li>
+                    <li>Email: <span class="highlight">test@example.com</span></li>
+                    <li>Message: <span class="highlight">This is a test submission from Bounder contact form</span></li>
+                </ul>
+            </li>
+            <li>Click "Send Message"</li>
+            <li>Check your email for the submission</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>📧 What Happens When Someone Submits</h2>
+        <ul>
+            <li>1️⃣ Form data is sent to Formspree</li>
+            <li>2️⃣ Formspree validates and processes the submission</li>
+            <li>3️⃣ You receive an email notification</li>
+            <li>4️⃣ User sees a success message</li>
+            <li>5️⃣ Submission is stored in your dashboard</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Form Features</h2>
+        <ul>
+            <li><strong>Required Fields:</strong> First Name, Last Name, Email, Message</li>
+            <li><strong>Optional Fields:</strong> Phone, Organization</li>
+            <li><strong>Subject Options:</strong> Drone safety specific topics</li>
+            <li><strong>Spam Protection:</strong> Honeypot field</li>
+            <li><strong>Styling:</strong> Matches Bounder's red/white theme</li>
+            <li><strong>Responsive:</strong> Works on all devices</li>
+        </ul>
+    </div>
+
+    <div class="status info">
+        <h3>📌 Important Links</h3>
+        <ul style="margin: 0;">
+            <li>Formspree Dashboard: <a href="https://formspree.io/forms/xqalyykn/submissions" target="_blank">https://formspree.io/forms/xqalyykn/submissions</a></li>
+            <li>Form Settings: <a href="https://formspree.io/forms/xqalyykn/settings" target="_blank">https://formspree.io/forms/xqalyykn/settings</a></li>
+            <li>Formspree Docs: <a href="https://help.formspree.io/" target="_blank">https://help.formspree.io/</a></li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 Deploy to Production</h2>
+        <p>Your contact form is ready for production! To deploy:</p>
+        <ol>
+            <li>Commit your changes:
+                <pre><code>git add -A
+git commit -m "Add Formspree contact form with ID xqalyykn"</code></pre>
+            </li>
+            <li>Push to GitHub:
+                <pre><code>git push origin main</code></pre>
+            </li>
+            <li>Your live site at <strong>bounder.io/contact</strong> will have a working form!</li>
+        </ol>
+    </div>
+
+    <script>
+        console.log('✅ Formspree Integration Test Page Loaded');
+        console.log('Form ID: xqalyykn');
+        console.log('Endpoint: https://formspree.io/f/xqalyykn');
+    </script>
+</body>
+</html>

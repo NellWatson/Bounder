@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "page": "Homepage",
+      "matchScore": 93.45,
+      "difference": 6.55,
+      "pixels": 135851
+    },
+    {
+      "page": "Contact",
+      "matchScore": 93.8,
+      "difference": 6.2,
+      "pixels": 128597
+    },
+    {
+      "page": "Privacy",
+      "matchScore": 90.79,
+      "difference": 9.21,
+      "pixels": 190959
+    },
+    {
+      "page": "Terms",
+      "matchScore": 90.26,
+      "difference": 9.74,
+      "pixels": 201970
+    }
+  ],
+  "avgMatch": 92.075,
+  "timestamp": "2025-08-06T00:04:22.363Z"
+}

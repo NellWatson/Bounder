@@ -1,0 +1,23 @@
+{
+  "name": "bounder-clone",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Clone Bounder.io from Squarespace to static HTML",
+  "scripts": {
+    "scrape": "node scrape-bounder.mjs",
+    "parse-xml": "node parse-xml.mjs",
+    "build": "npm run parse-xml && npm run scrape"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.1",
+    "p-limit": "^4.0.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^22.15.0",
+    "sharp": "^0.34.3",
+    "xml2js": "^0.6.2"
+  }
+}

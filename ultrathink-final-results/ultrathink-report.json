@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-08-06T11:57:30.259Z",
+  "finalScore": 97.8368605162425,
+  "totalPixelsDifferent": 133817,
+  "totalPixelsCompared": 6186240,
+  "pages": [
+    {
+      "page": "Homepage",
+      "error": "Size mismatch: 1920x3921 vs 1920x3920",
+      "sizeDiff": 1920
+    },
+    {
+      "page": "Contact",
+      "match": 99.74790148000884,
+      "diffPixels": 7304,
+      "totalPixels": 2897280,
+      "dimensions": "1920x1509"
+    },
+    {
+      "page": "Privacy",
+      "error": "Size mismatch: 1920x1818 vs 1920x1819",
+      "sizeDiff": 1920
+    },
+    {
+      "page": "Terms",
+      "match": 96.1534041155867,
+      "diffPixels": 126513,
+      "totalPixels": 3288960,
+      "dimensions": "1920x1713"
+    }
+  ]
+}

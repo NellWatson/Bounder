@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-08-06T11:46:40.473Z",
+  "overallMatch": 97.389,
+  "totalPixelsDifferent": 272132,
+  "totalPixelsCompared": 10423680,
+  "pages": [
+    {
+      "page": "Homepage",
+      "match": 96.469,
+      "diffPixels": 265783,
+      "totalPixels": 7526400,
+      "dimensions": "1920x3920"
+    },
+    {
+      "page": "Contact",
+      "match": 99.781,
+      "diffPixels": 6349,
+      "totalPixels": 2897280,
+      "dimensions": "1920x1509"
+    },
+    {
+      "page": "Privacy",
+      "error": "Size mismatch: 1920x1819 vs 1920x1818"
+    },
+    {
+      "page": "Terms",
+      "error": "Size mismatch: 1920x1714 vs 1920x1713"
+    }
+  ]
+}

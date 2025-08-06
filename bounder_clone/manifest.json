@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://www.bounder.io",
+    "file": "index.html"
+  },
+  {
+    "url": "https://www.bounder.io/new-page",
+    "file": "new-page.html"
+  },
+  {
+    "url": "https://www.bounder.io/contact",
+    "file": "contact.html"
+  },
+  {
+    "url": "https://www.bounder.io/intro",
+    "file": "intro.html"
+  },
+  {
+    "url": "https://www.bounder.io/privacy",
+    "file": "privacy.html"
+  },
+  {
+    "url": "https://www.bounder.io/ride-to-live-shift",
+    "file": "ride-to-live-shift.html"
+  },
+  {
+    "url": "https://www.bounder.io/gallery-shift",
+    "file": "gallery-shift.html"
+  },
+  {
+    "url": "https://www.bounder.io/",
+    "file": "index.html"
+  }
+]
