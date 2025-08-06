@@ -62,7 +62,67 @@
   img { max-width: 100%; height: auto; }
   .loaded { opacity: 1 !important; }
   * { visibility: visible !important; }
-</style></head>
+</style>
+          <style id="footer-fix">
+            /* Fix footer background */
+            footer {
+              background-color: #1a1a1a !important;
+              position: relative;
+              z-index: 10;
+            }
+            
+            /* Ensure no background images leak into footer */
+            footer::before,
+            footer::after {
+              display: none !important;
+            }
+            
+            /* Fix any parallax or background issues */
+            .parallax-item:last-child {
+              margin-bottom: 0 !important;
+            }
+            
+            /* Ensure footer stays at bottom */
+            .site-wrapper {
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .site-inner-wrapper {
+              flex: 1;
+            }
+            
+            /* Fix GitHub icon styling */
+            .social-icons svg,
+            .sqs-svg-icon--wrapper svg,
+            a[href*="github.com"] svg {
+              width: 24px;
+              height: 24px;
+              fill: white;
+              transition: opacity 0.3s ease;
+            }
+            
+            .social-icons a:hover svg,
+            .sqs-svg-icon--wrapper:hover svg,
+            a[href*="github.com"]:hover svg {
+              opacity: 0.7;
+            }
+            
+            /* Hide any stray background elements */
+            body > .parallax-item:last-of-type {
+              z-index: 1;
+            }
+            
+            /* Ensure footer has higher z-index */
+            footer,
+            .Footer {
+              z-index: 100;
+              background: #1a1a1a !important;
+              margin-top: 0 !important;
+            }
+          </style>
+        </head>
 
   <body id="collection-55acf908e4b004612082bf8c" class="event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links  events-layout-columns events-width-full gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-none gallery-info-overlay-hide gallery-arrow-style-circular gallery-show-arrows gallery-auto-crop gallery-autoplay gallery-loop  transparent-header parallax-scrolling hide-parallax-nav first-index-image-fullscreen index-image-height-fullscreen image-overlay hide-page-title title--description-alignment-center title--description-position-over-image  extra-description-formatting description-button-style-raised description-button-corner-style-square  blog-layout-simple blog-width-narrow hide-author hide-back-to-top-link show-category-navigation  product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark  opentable-style-light small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-index collection-layout-default collection-55acf908e4b004612082bf8c homepage view-list mobile-style-available has-banner-image  has-nav loaded">
 
@@ -550,96 +610,6 @@
   <a href="https://github.com/NellWatson/Bounder" class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element" data-sqsp-button="" target="_blank" data-initialized="true">
     GitHub
   </a>
-</div>
-</div></div><div class="sqs-block newsletter-block sqs-block-newsletter rendered" data-block-type="51" id="block-yui_3_17_2_67_1437398614550_7621"><div class="sqs-block-content">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-<div class="newsletter-form-wrapper
-  
-  newsletter-form-wrapper--layoutFloat
-  newsletter-form-wrapper--alignCenter
-  
-  ">
-  <form class="newsletter-form" data-form-id="55ad1306e4b073c6b3037274" autocomplete="on" method="POST" novalidate="" onsubmit="return (function (form) {
-    Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
-      (new Y.Squarespace.FormSubmit(form)).submit({
-        formId: '55ad1306e4b073c6b3037274',
-        collectionId: '55acf90ee4b0800256d08452',
-        objectName: 'page-55acf90ee4b0800256d08452'
-      });
-    });
-    return false;
-  })(this);">
-    <header class="newsletter-form-header">
-      <h2 class="newsletter-form-header-title">Stay Informed</h2>
-      <div class="newsletter-form-header-description"><p>Sign up with your email address to receive important&nbsp;updates.</p></div>
-    </header>
-    <div class="newsletter-form-body">
-      <div class="newsletter-form-fields-wrapper form-fields" style="vertical-align: middle;">
-        
-        
-          
-            <div id="email-yui_3_17_2_67_1437398614550_7628" class="newsletter-form-field-wrapper form-item field email required" style="vertical-align: bottom;">
-              <label class="newsletter-form-field-label title" for="email-yui_3_17_2_67_1437398614550_7628-field">Email Address</label>
-              <input id="email-yui_3_17_2_67_1437398614550_7628-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" autocomplete="email" type="email" spellcheck="false" placeholder="Email Address">
-            </div>
-          
-        
-          
-        
-      </div>
-      <div data-animation-role="button" class="newsletter-form-button-wrapper submit-wrapper" style="vertical-align: middle;">
-        <button class="
-            newsletter-form-button
-            sqs-system-button
-            sqs-editable-button-layout
-            sqs-editable-button-style
-            sqs-editable-button-shape
-            sqs-button-element--primary
-          " type="submit" value="Sign Up">
-          <span class="newsletter-form-spinner sqs-spin light large"></span>
-          <span class="newsletter-form-button-label">Sign Up</span>
-          <span class="newsletter-form-button-icon"></span>
-        </button>
-      </div>
-      
-        
-        <div class="captcha-container sqs-form-rendered
-          
-          
-          
-          " data-theme=""></div>
-        
-      
-    </div>
-    <div class="newsletter-form-footnote"><p>We respect your privacy, and your time.</p></div>
-    <div class="hidden form-submission-text">Thank you!</div>
-    <div class="hidden form-submission-html" data-submission-html=""></div>
-  </form>
 </div>
 </div></div></div></div></div>
 	     </div>

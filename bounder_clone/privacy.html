@@ -54,7 +54,67 @@
   img { max-width: 100%; height: auto; }
   .loaded { opacity: 1 !important; }
   * { visibility: visible !important; }
-</style></head>
+</style>
+          <style id="footer-fix">
+            /* Fix footer background */
+            footer {
+              background-color: #1a1a1a !important;
+              position: relative;
+              z-index: 10;
+            }
+            
+            /* Ensure no background images leak into footer */
+            footer::before,
+            footer::after {
+              display: none !important;
+            }
+            
+            /* Fix any parallax or background issues */
+            .parallax-item:last-child {
+              margin-bottom: 0 !important;
+            }
+            
+            /* Ensure footer stays at bottom */
+            .site-wrapper {
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .site-inner-wrapper {
+              flex: 1;
+            }
+            
+            /* Fix GitHub icon styling */
+            .social-icons svg,
+            .sqs-svg-icon--wrapper svg,
+            a[href*="github.com"] svg {
+              width: 24px;
+              height: 24px;
+              fill: white;
+              transition: opacity 0.3s ease;
+            }
+            
+            .social-icons a:hover svg,
+            .sqs-svg-icon--wrapper:hover svg,
+            a[href*="github.com"]:hover svg {
+              opacity: 0.7;
+            }
+            
+            /* Hide any stray background elements */
+            body > .parallax-item:last-of-type {
+              z-index: 1;
+            }
+            
+            /* Ensure footer has higher z-index */
+            footer,
+            .Footer {
+              z-index: 100;
+              background: #1a1a1a !important;
+              margin-top: 0 !important;
+            }
+          </style>
+        </head>
 
   <body id="collection-55ad0318e4b0249b48b92d93" class="event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links  events-layout-columns events-width-full gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-none gallery-info-overlay-hide gallery-arrow-style-circular gallery-show-arrows gallery-auto-crop gallery-autoplay gallery-loop  transparent-header parallax-scrolling hide-parallax-nav first-index-image-fullscreen index-image-height-fullscreen image-overlay hide-page-title title--description-alignment-center title--description-position-over-image  extra-description-formatting description-button-style-raised description-button-corner-style-square  blog-layout-simple blog-width-narrow hide-author hide-back-to-top-link show-category-navigation  product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark  opentable-style-light small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-layout-default collection-55ad0318e4b0249b48b92d93 mobile-style-available has-banner-image  has-nav loaded">
 

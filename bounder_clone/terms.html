@@ -147,7 +147,67 @@
   img { max-width: 100%; height: auto; }
   .loaded { opacity: 1 !important; }
   * { visibility: visible !important; }
-</style></head>
+</style>
+          <style id="footer-fix">
+            /* Fix footer background */
+            footer {
+              background-color: #1a1a1a !important;
+              position: relative;
+              z-index: 10;
+            }
+            
+            /* Ensure no background images leak into footer */
+            footer::before,
+            footer::after {
+              display: none !important;
+            }
+            
+            /* Fix any parallax or background issues */
+            .parallax-item:last-child {
+              margin-bottom: 0 !important;
+            }
+            
+            /* Ensure footer stays at bottom */
+            .site-wrapper {
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .site-inner-wrapper {
+              flex: 1;
+            }
+            
+            /* Fix GitHub icon styling */
+            .social-icons svg,
+            .sqs-svg-icon--wrapper svg,
+            a[href*="github.com"] svg {
+              width: 24px;
+              height: 24px;
+              fill: white;
+              transition: opacity 0.3s ease;
+            }
+            
+            .social-icons a:hover svg,
+            .sqs-svg-icon--wrapper:hover svg,
+            a[href*="github.com"]:hover svg {
+              opacity: 0.7;
+            }
+            
+            /* Hide any stray background elements */
+            body > .parallax-item:last-of-type {
+              z-index: 1;
+            }
+            
+            /* Ensure footer has higher z-index */
+            footer,
+            .Footer {
+              z-index: 100;
+              background: #1a1a1a !important;
+              margin-top: 0 !important;
+            }
+          </style>
+        </head>
 <body>
     <nav>
         <ul>
