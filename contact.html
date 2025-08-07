@@ -333,6 +333,88 @@
         padding: 0 20px;
       }
     }
+  
+    
+    /* Reduce excessive whitespace */
+    .Main--page {
+      min-height: auto !important;
+    }
+    
+    #page {
+      min-height: auto !important;
+    }
+    
+    .Main {
+      padding-bottom: 40px !important;
+    }
+    
+    /* Reduce spacing after GitHub button */
+    .sqs-block-button-container[data-github-button="true"] {
+      margin-bottom: 40px !important;
+    }
+    
+    /* Ensure footer stays at bottom without excessive space */
+    footer, 
+    .Footer,
+    #footer {
+      margin-top: 40px !important;
+      position: relative !important;
+    }
+    
+    /* Fix any excessive vertical padding */
+    .content-wrapper,
+    .sqs-layout {
+      padding-bottom: 40px !important;
+    }
+    
+    /* Ensure consistent header navigation display */
+    .header-nav {
+      display: block !important;
+      visibility: visible !important;
+    }
+    
+    .header-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header-nav a {
+      color: white !important;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: opacity 0.3s ease;
+    }
+    
+    .header-nav a:hover {
+      opacity: 0.6;
+    }
+  
+    
+    /* Ensure navigation visibility at all scales */
+    @media (min-width: 769px) {
+      .header-nav {
+        display: flex !important;
+        visibility: visible !important;
+      }
+      
+      .header-nav ul {
+        display: flex !important;
+        gap: 25px !important;
+      }
+      
+      .header-inner {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        max-width: 1200px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -341,8 +423,11 @@
       <div class="site-title">
         <a href="/">BOUNDER</a>
       </div>
+      
       <nav class="header-nav">
         <ul>
+          <li><a href="/gallery-shift.html">GALLERY</a></li>
+          <li><a href="/ride-to-live-shift.html">RIDE TO LIVE</a></li>
           <li><a href="/contact.html">CONTACT</a></li>
         </ul>
       </nav>
