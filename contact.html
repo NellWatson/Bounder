@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="https://images.squarespace-cdn.com/content/v1/55acf641e4b0b8a3dbbdbd91/1437403987855-UZEGF7VV4UCP5MQ7E5MI/drone-698564.jpg" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Bounder</title>
@@ -22,7 +24,7 @@
       position: relative;
       height: 50vh;
       min-height: 400px;
-      background: #1a1a1a center center;
+      background: url('https://images.squarespace-cdn.com/content/v1/55acf641e4b0b8a3dbbdbd91/1437403987855-UZEGF7VV4UCP5MQ7E5MI/drone-698564.jpg') center center;
       background-size: cover;
       display: flex;
       align-items: center;
@@ -238,7 +240,7 @@
   </style>
 </head>
 <body>
-  <div class="hero-section" data-bg-src="https://images.squarespace-cdn.com/content/v1/55acf641e4b0b8a3dbbdbd91/1437403987855-UZEGF7VV4UCP5MQ7E5MI/drone-698564.jpg">
+  <div class="hero-section">
     <header>
       <div class="header-inner">
         <div class="site-title">
@@ -352,7 +354,7 @@
     });
     
     // Observe all elements with lazy load attributes
-    document.querySelectorAll('[data-bg-src], [data-src]').forEach(img => {
+    document.querySelectorAll('[data-bg-src]:not(.hero-section):not(.header):not(.banner), [data-src]:not(.header-image):not(.logo)').forEach(img => {
       imageObserver.observe(img);
     });
     
