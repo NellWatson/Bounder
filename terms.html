@@ -124,14 +124,7 @@
           <style id="comprehensive-footer-styles">
             /* Hide Stay Informed section completely */
             #collection-58aadb94e6f2e14e390f0fb0,
-            .newsletter-block,
-            .newsletter-form,
-            .sqs-block-newsletter,
-            form[action*="newsletter"],
-            form[action*="subscribe"],
-            .stay-informed,
-            *:has(> form[action*="newsletter"]) {
-              display: block !important;
+            .newsletter { display: none !important;
             }
             
             /* GitHub footer icon - clean and visible */
@@ -393,6 +386,30 @@
     body, h1, h2, h3, h4, h5, h6, p, a, span, div {
       font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       visibility: visible !important;
+    }
+  </style>
+
+  <style id="newsletter-hide-comprehensive">
+    /* Hide all newsletter and subscribe elements */
+    .newsletter,
+    .newsletter-block,
+    .newsletter-form,
+    .sqs-block-newsletter,
+    .newsletter-wrapper,
+    .newsletter-content,
+    #collection-58aadb94e6f2e14e390f0fb0,
+    .stay-informed,
+    form[action*="newsletter"],
+    form[action*="subscribe"],
+    [data-block-type="newsletter"],
+    .Index-page--has-image:has(.sqs-block-newsletter),
+    *:has(> form[action*="newsletter"]) {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
   </style>
 </head>
