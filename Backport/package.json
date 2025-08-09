@@ -1,0 +1,20 @@
+{
+  "name": "slana-email-collector",
+  "version": "1.0.0",
+  "description": "Automatic email to CSV collector for Slana website",
+  "main": "email-server.js",
+  "scripts": {
+    "start": "node email-server.js",
+    "dev": "nodemon email-server.js",
+    "watch": "npm run start & npm run watch-csv",
+    "watch-csv": "node csv-watcher.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "chokidar": "^3.5.3"
+  }
+}

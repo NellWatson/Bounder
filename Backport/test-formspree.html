@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Contact Form - Slana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196F3;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .checkbox-wrapper {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .success-message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+        .error-message {
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Slana Contact Form</h1>
+        
+        <div class="info">
+            <p><strong>Testing the Slana Contact Form</strong></p>
+            <p>This form is connected to Formspree ID: <code>mvgqwwok</code></p>
+            <p>Submit the form to test the integration. You should receive a confirmation from Formspree.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mvgqwwok" method="POST" id="test-form">
+            <input type="hidden" name="_subject" value="Slana Contact Form Test">
+            
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your name..." required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="your@email.com" required>
+            </div>
+            
+            <div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Write your message..." required></textarea>
+            </div>
+            
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="privacy-consent" id="privacy-consent" required>
+                <label for="privacy-consent" style="font-weight: normal; margin: 0;">
+                    I agree to the processing of my personal data for the purpose of responding to this inquiry.
+                </label>
+            </div>
+            
+            <!-- Honeypot field for spam protection -->
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <!-- Custom redirect after submission -->
+            <input type="hidden" name="_next" value="/test-formspree.html?success=true">
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="success-message" id="success-message">
+            Thank you for your message! We'll get back to you soon.
+        </div>
+
+        <div class="error-message" id="error-message">
+            Please fill in all required fields correctly.
+        </div>
+    </div>
+
+    <script>
+        // Check if we're returning from a successful submission
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('test-form').style.display = 'none';
+            
+            // Clear the success parameter from URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        // Add form validation
+        document.getElementById('test-form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const privacyConsent = document.getElementById('privacy-consent').checked;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!name || !emailRegex.test(email) || !message || !privacyConsent) {
+                e.preventDefault();
+                document.getElementById('error-message').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('error-message').style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

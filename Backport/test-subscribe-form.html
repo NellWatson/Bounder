@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Form Test</title>
+    <script src="subscribe-form.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .newsletter-form-wrapper {
+            background: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .newsletter-form-header h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .newsletter-form-header-description {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .newsletter-form-body {
+            display: flex;
+            gap: 10px;
+            align-items: end;
+        }
+        .newsletter-form-field-wrapper {
+            flex: 1;
+        }
+        .newsletter-form-field-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .newsletter-form-field-element {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .newsletter-form-button {
+            padding: 12px 24px;
+            background: #007cba;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            min-width: 120px;
+        }
+        .newsletter-form-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .newsletter-form-button-label {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subscribe Form Test</h1>
+    
+    <div class="newsletter-form-wrapper">
+        <form class="newsletter-form" autocomplete="on">
+            <header class="newsletter-form-header">
+                <h2>Subscribe</h2>
+                <div class="newsletter-form-header-description">
+                    <p>Sign up with your email address to receive news and updates.</p>
+                </div>
+            </header>
+            <div class="newsletter-form-body">
+                <div class="newsletter-form-field-wrapper">
+                    <label class="newsletter-form-field-label" for="email-field">Email Address</label>
+                    <input id="email-field" class="newsletter-form-field-element" name="email" type="email" placeholder="Email Address">
+                </div>
+                <div class="newsletter-form-button-wrapper">
+                    <button class="newsletter-form-button" type="submit">
+                        <span class="newsletter-form-button-label">Sign Up</span>
+                    </button>
+                </div>
+            </div>
+            <div class="form-submission-text">Thank you!</div>
+        </form>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; background: #e7f3ff; border-radius: 4px;">
+        <h3>Test Cases:</h3>
+        <ol>
+            <li><strong>Empty email:</strong> Try submitting without entering an email</li>
+            <li><strong>Invalid email:</strong> Try entering "invalid-email"</li>
+            <li><strong>Valid email:</strong> Try entering "test@example.com"</li>
+        </ol>
+        <p><strong>Expected behavior:</strong> No modal popups should appear. Messages should show inline where the form is, and the form should hide during success message display.</p>
+    </div>
+</body>
+</html>

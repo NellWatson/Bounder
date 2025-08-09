@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Test</title>
+    <script src="lazy-loading.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .test-section {
+            margin-bottom: 100vh; /* Creates space between sections */
+            padding: 20px;
+            border: 2px solid #ccc;
+            background: #f5f5f5;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .external-link {
+            display: block;
+            margin: 10px 0;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Loading Test Page</h1>
+    
+    <div class="test-section">
+        <h2>Section 1 - Visible Immediately</h2>
+        <p>This section should be visible immediately.</p>
+        <img src="https://via.placeholder.com/600x400/FF0000/FFFFFF?text=Image+1" alt="Test Image 1">
+        <a href="https://www.google.com" class="external-link">External Link (should open in new tab)</a>
+    </div>
+
+    <div class="test-section sqs-block">
+        <h2>Section 2 - Should Lazy Load</h2>
+        <p>This section should fade in when scrolled into view.</p>
+        <img data-src="https://via.placeholder.com/600x400/00FF00/FFFFFF?text=Image+2" alt="Test Image 2">
+        <a href="https://www.example.com" class="external-link">Another External Link</a>
+    </div>
+
+    <div class="test-section sqs-block">
+        <h2>Section 3 - Should Lazy Load</h2>
+        <p>This section should also fade in when scrolled into view.</p>
+        <img data-src="https://via.placeholder.com/600x400/0000FF/FFFFFF?text=Image+3" alt="Test Image 3">
+        <a href="test-lazy-loading.html">Internal Link (should not open in new tab)</a>
+    </div>
+
+    <div class="test-section summary-item">
+        <h2>Section 4 - Summary Item</h2>
+        <p>Testing with summary-item class.</p>
+        <img data-src="https://via.placeholder.com/600x400/FFFF00/000000?text=Image+4" alt="Test Image 4">
+        <a href="https://www.github.com" class="external-link">GitHub (external)</a>
+    </div>
+
+    <div class="test-section">
+        <h2>Section 5 - Bottom</h2>
+        <p>You've scrolled to the bottom!</p>
+        <img src="https://images.squarespace-cdn.com/content/v1/5d741f0f8cab1d570da423f9/1567899805423-W3LT8DGMZ5EF970TX4L8/SlanaBannerSmaller.jpg?format=300w" alt="Squarespace CDN Image">
+    </div>
+
+    <script>
+        // Log when images are loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach((img, index) => {
+                img.addEventListener('load', function() {
+                    console.log(`Image ${index + 1} loaded:`, img.src);
+                });
+            });
+
+            // Check link targets
+            setTimeout(() => {
+                const links = document.querySelectorAll('a');
+                links.forEach(link => {
+                    console.log(`Link: ${link.href} | Target: ${link.target || 'none'} | Rel: ${link.rel || 'none'}`);
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

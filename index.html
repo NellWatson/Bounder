@@ -135,7 +135,7 @@
             }
             
             /* Reduce spacing after GitHub button */
-            .sqs-block-button-container[data-github-button="true"] { margin-bottom: 60px !important; }
+            .sqs-block-button-container[data-github-button="true"] { margin-bottom: 40px !important; }
             
             /* Footer spacing */
             footer,
@@ -169,7 +169,7 @@
                 height: 35px !important;
               }
               
-              .sqs-block-button-container[data-github-button="true"] { margin-bottom: 60px !important; }
+              .sqs-block-button-container[data-github-button="true"] { margin-bottom: 40px !important; }
             }
           </style>
 
@@ -329,7 +329,7 @@
     
     /* Specific fix for GitHub button area */
     .sqs-block-button-container[data-github-button="true"] {
-      margin-bottom: 60px !important;
+      margin-bottom: 40px !important;
     }
     
     /* Remove any huge min-height or height values */
@@ -398,6 +398,67 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+    /* Cookie banner styling */
+    .cookie-banner-mount-point {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      background: rgba(0,0,0,0.95);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .gdpr-cookie-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      gap: 20px;
+    }
+    
+    .disclaimer-text {
+      color: white;
+      margin: 0;
+      font-size: 14px;
+      flex: 1;
+    }
+    
+    .button-group {
+      flex-shrink: 0;
+    }
+    
+    .sqs-cookie-banner-v2-accept {
+      background: white;
+      color: black;
+      border: none;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: opacity 0.3s ease;
+    }
+    
+    .sqs-cookie-banner-v2-accept:hover {
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .gdpr-cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+      
+      .disclaimer-text {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
 
@@ -426,7 +487,7 @@
           </a>
         </h1>
         <nav class="header-nav">
-          <a href="contact.html">CONTACT</a>
+          <a href="https://nellinc.github.io/Bounder/contact.html">CONTACT</a>
         </nav>
       </div>
     </header>
@@ -555,8 +616,6 @@
   <h1  data-perfect-id="perfect-184">Never be at the mercy of rogue drones again!</h1><h2  data-perfect-id="perfect-185">Bounder technology has now been released free and open source (MIT License)!</h2>
 </div>
 
-</div></div><div class="sqs-block button-block sqs-block-button" data-block-type="53" data-sqsp-block="button" id="block-yui_3_17_2_1_1599501804156_15868" ><div class="sqs-block-content" id="yui_3_17_2_1_1754481231461_142" >
-
 </div></div><div class="sqs-block button-block sqs-block-button" data-block-type="53" data-sqsp-block="button" id="block-yui_3_17_2_1_1599500643862_8535" ><div class="sqs-block-content" id="yui_3_17_2_1_1754481231461_149" >
 
 <div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button" data-alignment="center" data-button-size="large" data-button-type="secondary" id="yui_3_17_2_1_1754481231461_148"  data-github-button="true">
@@ -624,6 +683,27 @@
 
 <div id="yui3-css-stamp" ></div><div class="cookie-banner-manager" data-perfect-id="perfect-254" ></div><div data-perfect-id="perfect-255" ><div class="grecaptcha-badge" data-style="bottomright"  data-perfect-id="perfect-256"><div class="grecaptcha-logo" data-perfect-id="perfect-257" ><iframe loading="lazy" title="reCAPTCHA" width="256" height="60" role="presentation" name="a-q4gtij5uz3z3" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv&amp;co=aHR0cHM6Ly93d3cuYm91bmRlci5pbzo0NDM.&amp;hl=en&amp;v=DBIsSQ0s2djD_akThoRUDeHa&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=bd3k8p1n4f34" data-perfect-id="perfect-258" ></iframe></div><div class="grecaptcha-error" data-perfect-id="perfect-259" ></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" ></textarea></div><iframe loading="lazy"  data-perfect-id="perfect-261"></iframe></div>
 <script>
+  // Cookie banner functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if cookie acceptance was already stored
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+      const banner = document.querySelector('.cookie-banner-mount-point');
+      if (banner) banner.style.display = 'none';
+    }
+    
+    // Handle OK button click
+    const acceptButton = document.querySelector('.sqs-cookie-banner-v2-accept');
+    if (acceptButton) {
+      acceptButton.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        const banner = document.querySelector('.cookie-banner-mount-point');
+        if (banner) {
+          banner.style.display = 'none';
+        }
+      });
+    }
+  });
+  
   // Lazy load background images
   document.addEventListener('DOMContentLoaded', function() {
     // Create Intersection Observer for lazy loading

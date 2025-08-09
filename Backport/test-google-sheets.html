@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Google Sheets Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        button {
+            background: #007cba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #005a87;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        pre {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Sheets Integration Test</h1>
+    
+    <div class="test-section">
+        <h2>Current Configuration</h2>
+        <p><strong>Google Script URL:</strong></p>
+        <pre id="script-url"></pre>
+        <p><strong>Your Google Sheet:</strong></p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1kx1_ilWoBq0rBhbIgLZ-Hmxrc_-wHs8mnt1wX0KttSU/edit" target="_blank">Open Sheet</a></p>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Form Submission</h2>
+        <button onclick="testSubmission()">Send Test Email</button>
+        <div id="test-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Check LocalStorage Backup</h2>
+        <button onclick="checkLocalStorage()">View Saved Emails</button>
+        <div id="storage-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Direct API Test</h2>
+        <button onclick="testDirectAPI()">Test Google Script Directly</button>
+        <div id="api-result"></div>
+    </div>
+
+    <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyjOi3mnvynWtnd3J9klcAdFPoVwviSUFchFdyId7K5DbdIxt1KUWzL9M1Zc2v0ospfWQ/exec';
+        
+        // Display current URL
+        document.getElementById('script-url').textContent = GOOGLE_SCRIPT_URL;
+        
+        async function testSubmission() {
+            const resultDiv = document.getElementById('test-result');
+            resultDiv.innerHTML = '<p>Sending test email...</p>';
+            
+            const testEmail = `test-${Date.now()}@example.com`;
+            
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: testEmail,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <p>✅ Request sent successfully!</p>
+                        <p>Email sent: <strong>${testEmail}</strong></p>
+                        <p>Note: Due to CORS, we can't verify if it was saved to the sheet.</p>
+                        <p>Please check your Google Sheet to confirm.</p>
+                    </div>
+                `;
+                
+                // Save to localStorage as backup
+                const subscribers = JSON.parse(localStorage.getItem('slana_subscribers') || '[]');
+                subscribers.push({
+                    email: testEmail,
+                    timestamp: new Date().toISOString()
+                });
+                localStorage.setItem('slana_subscribers', JSON.stringify(subscribers));
+                
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <p>❌ Error sending request:</p>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function checkLocalStorage() {
+            const resultDiv = document.getElementById('storage-result');
+            const subscribers = JSON.parse(localStorage.getItem('slana_subscribers') || '[]');
+            
+            if (subscribers.length === 0) {
+                resultDiv.innerHTML = '<div class="result">No emails saved in localStorage yet.</div>';
+            } else {
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <p>Found ${subscribers.length} email(s) in localStorage:</p>
+                        <pre>${JSON.stringify(subscribers, null, 2)}</pre>
+                    </div>
+                `;
+            }
+        }
+        
+        async function testDirectAPI() {
+            const resultDiv = document.getElementById('api-result');
+            resultDiv.innerHTML = '<p>Testing direct API call (may fail due to CORS)...</p>';
+            
+            try {
+                // Try GET request first
+                const response = await fetch(GOOGLE_SCRIPT_URL);
+                const text = await response.text();
+                
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <p>✅ Google Script is accessible!</p>
+                        <p>Response: ${text}</p>
+                    </div>
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <p>⚠️ Cannot access directly due to CORS</p>
+                        <p>This is expected. The script will still work with no-cors mode.</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

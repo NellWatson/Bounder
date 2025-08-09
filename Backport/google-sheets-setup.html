@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Setup Guide - Slana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .step {
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #263238;
+            color: #aed581;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .test-form {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .current-subscribers {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 Slana - Google Sheets Integration Setup</h1>
+    
+    <p>This guide will help you connect your subscription form to your Google Sheet. The entire process takes about 5-10 minutes.</p>
+    
+    <h2>📊 Your Google Sheet</h2>
+    <p>Your subscription data will be saved to: <br>
+    <a href="https://docs.google.com/spreadsheets/d/1x8pFCiYq9fy_RtnzI_dxwWCNWmwFI4qDyaRTmfbqpv4/edit" target="_blank">
+        https://docs.google.com/spreadsheets/d/1x8pFCiYq9fy_RtnzI_dxwWCNWmwFI4qDyaRTmfbqpv4/edit
+    </a></p>
+
+    <div class="step">
+        <h3>Step 1: Prepare Your Google Sheet</h3>
+        <p>Open your Google Sheet and make sure the first row has these headers:</p>
+        <ul>
+            <li>Cell A1: <code>Email</code></li>
+            <li>Cell B1: <code>Timestamp</code></li>
+            <li>Cell C1: <code>Date Added</code></li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <h3>Step 2: Create the Google Apps Script</h3>
+        <ol>
+            <li>In your Google Sheet, click <strong>Extensions → Apps Script</strong></li>
+            <li>Delete any existing code</li>
+            <li>Copy and paste this entire code:</li>
+        </ol>
+        
+        <pre><code>function doPost(e) {
+  try {
+    // Get the active sheet
+    const sheet = SpreadsheetApp.getActiveSheet();
+    
+    // Parse the incoming data
+    const data = JSON.parse(e.postData.contents);
+    
+    // Append row with email, timestamp, and formatted date
+    sheet.appendRow([
+      data.email,
+      data.timestamp,
+      new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' })
+    ]);
+    
+    // Return success response
+    return ContentService
+      .createTextOutput(JSON.stringify({
+        success: true,
+        message: 'Email added successfully'
+      }))
+      .setMimeType(ContentService.MimeType.JSON);
+      
+  } catch (error) {
+    // Return error response
+    return ContentService
+      .createTextOutput(JSON.stringify({
+        success: false,
+        error: error.toString()
+      }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet() {
+  return ContentService
+    .createTextOutput('Slana Subscribe Endpoint Active - Use POST method to submit emails')
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+
+// Test function to verify script is working
+function testScript() {
+  Logger.log('Script is set up correctly!');
+  Logger.log('Sheet name: ' + SpreadsheetApp.getActiveSheet().getName());
+  Logger.log('Sheet ID: ' + SpreadsheetApp.getActiveSpreadsheet().getId());
+}</code></pre>
+        
+        <p>4. Click <strong>Save</strong> (💾 icon or Ctrl/Cmd+S)</p>
+        <p>5. Name it "Slana Subscribe Handler" when prompted</p>
+    </div>
+
+    <div class="step">
+        <h3>Step 3: Deploy as Web App</h3>
+        <ol>
+            <li>Click <strong>Deploy → New Deployment</strong></li>
+            <li>Click the gear ⚙️ next to "Select type" and choose <strong>Web app</strong></li>
+            <li>Fill in these settings:
+                <ul>
+                    <li>Description: <code>Slana Subscribe Form</code></li>
+                    <li>Execute as: <strong>Me</strong></li>
+                    <li>Who has access: <strong>Anyone</strong></li>
+                </ul>
+            </li>
+            <li>Click <strong>Deploy</strong></li>
+            <li><strong>IMPORTANT:</strong> Copy the Web app URL (it will look like):<br>
+                <code>https://script.google.com/macros/s/AKfycb.../exec</code></li>
+        </ol>
+    </div>
+
+    <div class="step">
+        <h3>Step 4: Update Your Website Code</h3>
+        <p>Paste your Web App URL here and click "Update Code":</p>
+        <input type="text" id="webAppUrl" placeholder="https://script.google.com/macros/s/.../exec" style="width: 100%; padding: 10px; margin: 10px 0;">
+        <button onclick="generateUpdatedCode()">Generate Updated Code</button>
+        
+        <div id="codeOutput" style="display: none; margin-top: 20px;">
+            <p><strong>Copy this URL and update line 15 in subscribe-form.js:</strong></p>
+            <pre id="updatedCode"></pre>
+        </div>
+    </div>
+
+    <div class="test-form">
+        <h3>🧪 Test Your Integration</h3>
+        <p>Once you've updated the code, test it here:</p>
+        <form id="testForm">
+            <input type="email" id="testEmail" placeholder="test@example.com" required>
+            <button type="submit">Test Subscribe</button>
+        </form>
+        <div id="testResult"></div>
+    </div>
+
+    <div class="current-subscribers">
+        <h3>📊 Current Local Subscribers</h3>
+        <p>Emails saved locally before Google Sheets integration:</p>
+        <div id="localSubscribers"></div>
+        <button onclick="exportLocalSubscribers()">Export as CSV</button>
+    </div>
+
+    <script>
+        // Check for local subscribers
+        function displayLocalSubscribers() {
+            const subscribers = JSON.parse(localStorage.getItem('slana_subscribers') || '[]');
+            const container = document.getElementById('localSubscribers');
+            
+            if (subscribers.length === 0) {
+                container.innerHTML = '<p>No local subscribers yet.</p>';
+            } else {
+                container.innerHTML = '<ul>' + 
+                    subscribers.map(sub => `<li>${sub.email} - ${new Date(sub.timestamp).toLocaleString()}</li>`).join('') +
+                    '</ul>';
+            }
+        }
+
+        // Export local subscribers as CSV
+        function exportLocalSubscribers() {
+            const subscribers = JSON.parse(localStorage.getItem('slana_subscribers') || '[]');
+            if (subscribers.length === 0) {
+                alert('No subscribers to export');
+                return;
+            }
+            
+            let csv = 'Email,Timestamp,Date Added\n';
+            subscribers.forEach(sub => {
+                csv += `${sub.email},${sub.timestamp},${new Date(sub.timestamp).toLocaleString()}\n`;
+            });
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'slana_subscribers.csv';
+            a.click();
+        }
+
+        // Generate updated code
+        function generateUpdatedCode() {
+            const url = document.getElementById('webAppUrl').value.trim();
+            if (!url || !url.startsWith('https://script.google.com/macros/s/')) {
+                alert('Please enter a valid Google Apps Script URL');
+                return;
+            }
+            
+            document.getElementById('codeOutput').style.display = 'block';
+            document.getElementById('updatedCode').textContent = 
+                `const GOOGLE_SCRIPT_URL = '${url}';`;
+        }
+
+        // Test form
+        document.getElementById('testForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('testEmail').value;
+            const resultDiv = document.getElementById('testResult');
+            
+            resultDiv.innerHTML = '<p>Testing...</p>';
+            
+            try {
+                // Simulate the same logic as subscribe-form.js
+                const subscribers = JSON.parse(localStorage.getItem('slana_subscribers') || '[]');
+                subscribers.push({
+                    email: email,
+                    timestamp: new Date().toISOString()
+                });
+                localStorage.setItem('slana_subscribers', JSON.stringify(subscribers));
+                
+                resultDiv.innerHTML = '<p class="success">✓ Test successful! Email saved locally.</p>';
+                displayLocalSubscribers();
+            } catch (error) {
+                resultDiv.innerHTML = '<p class="error">✗ Error: ' + error.message + '</p>';
+            }
+        });
+
+        // Load local subscribers on page load
+        displayLocalSubscribers();
+    </script>
+</body>
+</html>

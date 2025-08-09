@@ -354,9 +354,34 @@
       }
     }
     
-    /* Hide honeypot field */
+    /* Honeypot field - ensure it's completely hidden on all devices */
     input[name="_gotcha"] {
       display: none !important;
+      position: absolute !important;
+      left: -5000px !important;
+      height: 0 !important;
+      width: 0 !important;
+      line-height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: 0 !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      clip: rect(0,0,0,0) !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+    }
+    
+    /* Extra safety for mobile devices */
+    @media screen and (max-width: 768px) {
+      input[name="_gotcha"] {
+        display: none !important;
+        visibility: hidden !important;
+        position: fixed !important;
+        left: -9999px !important;
+        top: -9999px !important;
+      }
     }
   </style>
 </head>
@@ -473,8 +498,17 @@
                   </label>
                 </div>
                 
+                <!-- Honeypot field for spam protection (hidden from users) -->
+                <input 
+                  type="text" 
+                  name="_gotcha" 
+                  tabindex="-1"
+                  autocomplete="off"
+                  style="display: none !important; position: absolute !important; left: -5000px !important; height: 0 !important; width: 0 !important; line-height: 0 !important; padding: 0 !important; margin: 0 !important; border: 0 !important;"
+                  aria-hidden="true"
+                />
+                
                 <!-- Hidden Fields -->
-                <input type="text" name="_gotcha" style="display:none" />
                 <input type="hidden" name="_subject" value="New Contact Form Submission - Bounder" />
                 <input type="hidden" name="_next" value="https://nellinc.github.io/Bounder/contact.html?success=true" />
                 
